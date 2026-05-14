@@ -1,8 +1,8 @@
 <a id="top"></a>
 
-# Awesome Visual Agent
-
 <div align="center">
+
+<h1>Awesome Visual Agent</h1>
 
 <p>
   <strong>A carefully curated map of visual agents across understanding, generation, interleaved multimodality, GUI/computer use, and embodied vision-language-action systems.</strong>
@@ -90,6 +90,8 @@ To keep the boundary clean, this list prioritizes:
 - GUI / computer-use agents, embodied VLA agents, and their benchmarks
 - tools that are directly useful for building or evaluating visual agents
 
+This curation has also been cross-checked against major community lists, especially [Awesome-GUI-Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents), [awesome-ui-agents](https://github.com/opendilab/awesome-ui-agents), and [GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List), with the current pass updated on `2026-05-14`.
+
 [Back to top](#top)
 
 ## 2026 Radar
@@ -161,12 +163,14 @@ To keep the boundary clean, this list prioritizes:
 | SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2401.10935) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/njucckevin/SeeClick) | Foundational if grounding is the bottleneck you care about most. |
 | UGround: Universal Visual Grounding for GUI Agents | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.05243) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/OSU-NLP-Group/UGround) | One of the strongest 2024 grounding papers, arguing for fully visual human-like GUI perception. |
 | OS-ATLAS: A Foundation Action Model for Generalist GUI Agents | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.23218) | Strong action-grounding model and large cross-platform GUI corpus for open GUI agents. |
+| UI-E2I-Synth: Advancing GUI Grounding with Large-Scale Instruction Synthesis | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.11257) | Important synthetic-data direction for scaling GUI grounding quality and instruction diversity. |
 | Ferret-UI: Grounded Mobile UI Understanding with Multimodal LLMs | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2404.05719) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/apple/ml-ferret) | Strong mobile-UI grounding work with explicit region-aware training. |
 | ShowUI: One Vision-Language-Action Model for GUI Visual Agent | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2411.17465) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/showlab/ShowUI) | Unified VLA-style GUI agent with screenshot-conditioned action modeling. |
 | OmniParser for Pure Vision Based GUI Agent | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2408.00203) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/microsoft/OmniParser) | One of the most practical tools for parsing screenshots into reliable interactable regions. |
 | Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.04454) | Important pure-vision GUI agent without dependence on textual trees. |
 | InfiGUIAgent: A Multimodal Generalist GUI Agent with Native Reasoning and Reflection | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.04575) | Notable for expectation-reflection and explicit multi-step reasoning. |
 | UI-Zoomer: Uncertainty-Driven Adaptive Zoom-In for GUI Grounding | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.14113) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/UI-Zoomer) | Strong training-free zoom-in framework for small targets and dense layouts. |
+| Test-Time Reinforcement Learning for GUI Grounding via Region Consistency | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.05615) | Notable test-time RL method that directly optimizes GUI grounding through region-consistency rewards. |
 
 [Back to top](#top)
 
@@ -218,9 +222,11 @@ To keep the boundary clean, this list prioritizes:
 | UI-TARS: Pioneering Automated GUI Interaction with Native Agents | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.12326) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/bytedance/UI-TARS) | End-to-end native GUI agent and one of the clearest signals of where the field is heading. |
 | Agent S | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.08164) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/simular-ai/Agent-S) | Strong open framework for hierarchical planning and experience reuse. |
 | Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.00906) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/simular-ai/Agent-S) | Strong compositional upgrade focused on grounding specialists and proactive planning. |
+| AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks? | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.15711) | Important for moving beyond short benchmark episodes toward realistic long-horizon web assistance. |
 | ScreenSpot-Pro: GUI Grounding for Professional High-Resolution Computer Use | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07981) | Important if you care about real professional interfaces instead of toy screenshots. |
 | ShowUI-Aloha: Human-Taught GUI Agent | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.07181) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/showlab/ShowUI) | Valuable pipeline for turning raw human screen recordings into structured GUI-agent supervision. |
 | UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13822) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/UI-Copilot) | Strong recent result for long-horizon GUI tasks with explicit retrieval and calculator assistance. |
+| ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.20502) | Important memory-and-program-synthesis direction that moves GUI agents from reactive loops to executable plans. |
 | OS-Symphony: A Holistic Framework for Robust and Generalist Computer-Using Agent | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.07779) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/OS-Copilot/OS-Symphony) | Strong recent result on memory, reflection, and visual-aware tutorial retrieval. |
 | VideoWebArena | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.19100) | Useful for long-context video understanding inside web-agent workflows. |
 
@@ -257,7 +263,7 @@ To keep the boundary clean, this list prioritizes:
 | Technical Theme | Why It Matters | Representative Works |
 | --- | --- | --- |
 | Grounding and screen parsing | Agents fail if they cannot point to the right region, button, token, or object | SeeClick, UGround, OmniParser, UI-Zoomer, ScreenSpot-Pro |
-| Long-horizon planning | Real tasks need subgoals, recovery, and temporal abstraction | Agent S, Agent S2, OS-Symphony, World-Value-Action |
+| Long-horizon planning | Real tasks need subgoals, recovery, and temporal abstraction | Agent S, Agent S2, UI-Copilot, ActionEngine, OS-Symphony, World-Value-Action |
 | Reflection and memory | Agents need to remember prior steps and recover from failures | InfiGUIAgent, Agent S, UI-Copilot, OS-Symphony, MemGUI-Bench |
 | Unified tokenization and interleaving | Interleaved systems benefit from text and image sharing a common trajectory space | Emu3, MiniGPT-5, Show-o, DuoGen |
 | Unified understanding plus generation | Modern systems increasingly need to analyze and create visuals in one coherent loop | Show-o, Janus, Qwen-Image, Qwen-Image-2.0, VisionCreator |
@@ -277,6 +283,8 @@ To keep the boundary clean, this list prioritizes:
 | Desktop perception and interaction | UI-Vision | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.15661) | Fine-grained offline benchmark for desktop perception, layout grounding, and action prediction. |
 | Windows | Windows Agent Arena | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2409.08264) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/microsoft/WindowsAgentArena) | Scalable Windows benchmark. |
 | Android | AndroidWorld | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2405.14573) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/google-research/android_world) | Dynamic Android benchmark with broad task diversity. |
+| Mobile interactive evaluation | MobileAgentBench | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2406.08184) | Efficient and practical benchmark for mobile GUI agents across open-source apps. |
+| Smartphone agent evaluation | SPA-Bench | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.15164) | Comprehensive multilingual smartphone benchmark with plug-and-play agent integration and multi-metric evaluation. |
 | Desktop and web scripting | OmniACT | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2402.17553) | Evaluates executable automation rather than only low-level control traces. |
 | GUI grounding | ScreenSpot-Pro | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07981) | High-resolution professional-screen grounding benchmark. |
 | GUI memory | MemGUI-Bench | [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.06075) | Strong new benchmark for cross-session and cross-temporal memory in mobile GUI agents. |
@@ -388,7 +396,8 @@ This section prioritizes durable technical writeups over hype posts.
 7. [UI-TARS](https://arxiv.org/abs/2501.12326)
 8. [Agent S2](https://arxiv.org/abs/2504.00906)
 9. [UI-Copilot](https://arxiv.org/abs/2604.13822)
-10. [OS-Symphony](https://arxiv.org/abs/2601.07779)
+10. [ActionEngine](https://arxiv.org/abs/2602.20502)
+11. [OS-Symphony](https://arxiv.org/abs/2601.07779)
 
 ### Path B: Visual Generation and Interleaved Multimodality
 
@@ -421,6 +430,7 @@ This section prioritizes durable technical writeups over hype posts.
 | Awesome Multimodal Modeling | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/OpenEnvision/Awesome-Multimodal-Modeling) | Strong complementary index for broader multimodal modeling beyond visual agents. |
 | Evolving Visual Generation | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation) | Best companion list for the visual-generation side. |
 | Awesome-GUI-Agents | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | Very useful cross-check list for fresh GUI grounding, long-horizon automation, and benchmark papers. |
+| GUI-Agents-Paper-List | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | One of the most systematic community-maintained paper indices for GUI agents, with structured metadata and filtering. |
 | awesome-gpt-image-2 | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/freestylefly/awesome-gpt-image-2) | High-quality prompt system and skill library for generation workflows. |
 | gpt_image_2_skill | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/wuyoscar/gpt_image_2_skill) | Focused image-generation skill and example repository. |
 | awesome-ui-agents | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/opendilab/awesome-ui-agents) | Useful neighboring list if you want extra depth on UI agents. |
