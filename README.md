@@ -9,14 +9,6 @@
 </p>
 
 <p>
-  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent">Repository</a> |
-  <a href="https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation">Evolving Visual Generation</a> |
-  <a href="https://github.com/OpenEnvision/Awesome-Multimodal-Modeling">Awesome Multimodal Modeling</a> |
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2">awesome-gpt-image-2</a> |
-  <a href="https://github.com/wuyoscar/gpt_image_2_skill">gpt_image_2_skill</a>
-</p>
-
-<p>
   <img alt="curation" src="https://img.shields.io/badge/curation-research--driven-111111?style=for-the-badge">
   <img alt="scope" src="https://img.shields.io/badge/scope-visual%20agents-0f766e?style=for-the-badge">
   <img alt="years" src="https://img.shields.io/badge/coverage-2023--2026-c2410c?style=for-the-badge">
