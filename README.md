@@ -1,31 +1,39 @@
-```md
+<a id="top"></a>
 <div align="center">
-  <h1>Awesome Visual Agent</h1>
-  <p><strong>A research-driven map of visual agents that perceive, ground, plan, act, create, and evaluate in pixel-grounded environments.</strong></p>
-  <p>
-    <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
-    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/stargazers"><img src="https://img.shields.io/github/stars/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub stars"></a>
-    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/network/members"><img src="https://img.shields.io/github/forks/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub forks"></a>
-    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
-    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/commits/main"><img src="https://img.shields.io/github/last-commit/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="Last Commit"></a>
-  </p>
-  <p>
-    <img alt="scope" src="https://img.shields.io/badge/scope-visual%20agents-0f766e?style=for-the-badge">
-    <img alt="coverage" src="https://img.shields.io/badge/coverage-2023--2026-c2410c?style=for-the-badge">
-    <img alt="boundary" src="https://img.shields.io/badge/boundary-agentic%20only-111111?style=for-the-badge">
-    <img alt="updated" src="https://img.shields.io/badge/updated-2026--05--16-1d4ed8?style=for-the-badge">
-  </p>
+# Awesome Visual Agent
+
+**A research-driven map of visual agents that perceive, ground, plan, act, create, and evaluate in pixel-grounded environments.**
+
+<p>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
+  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/stargazers"><img src="https://img.shields.io/github/stars/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub stars"></a>
+  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/network/members"><img src="https://img.shields.io/github/forks/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub forks"></a>
+  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/commits/main"><img src="https://img.shields.io/github/last-commit/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="Last Commit"></a>
+</p>
+
+<p>
+  <img alt="scope" src="https://img.shields.io/badge/scope-visual%20agents-0f766e?style=for-the-badge">
+  <img alt="coverage" src="https://img.shields.io/badge/coverage-2023--2026-c2410c?style=for-the-badge">
+  <img alt="boundary" src="https://img.shields.io/badge/boundary-agentic%20only-111111?style=for-the-badge">
+  <img alt="updated" src="https://img.shields.io/badge/updated-2026--05--16-1d4ed8?style=for-the-badge">
+</p>
 </div>
+
 > [!IMPORTANT]
 > This repository is intentionally **not** a generic multimodal-model list. It focuses on systems that close the loop between
 > **visual perception**, **grounding**, **reasoning**, **memory**, **tool use**, **action**, and, where appropriate,
 > **agentic visual creation**. Broad VLMs, generic image generators, and non-agentic multimodal models are deliberately
 > excluded unless they are directly central to a visual-agent workflow, benchmark, or tooling stack.
+
 > [!TIP]
 > If this repository saves you reading time or helps you build visual agents faster, please consider **starring** it
 > and opening a **pull request** for missing papers, tools, benchmarks, or systems notes.
+
 ---
+
 ## Table of Contents
+
 - [Why This Repo](#why-this-repo)
 - [What Counts as a Visual Agent](#what-counts-as-a-visual-agent)
 - [2026 Radar](#2026-radar)
@@ -60,40 +68,56 @@
 - [License](#license)
 - [Contributing](#contributing)
 - [Acknowledgments](#acknowledgments)
+
 ---
+
 ## Why This Repo
+
 Visual agents are no longer just "models that can see." The practical frontier is moving toward systems that can:
+
 - ground language in screenshots, documents, layouts, objects, and scenes
 - inspect, zoom, re-check, and recover instead of answering in one pass
 - call tools, browse interfaces, and act in digital environments
 - convert visual observations into executable desktop, browser, mobile, or robot actions
 - learn from demonstrations, trajectories, memory, and verifier feedback
 - evaluate themselves inside realistic environments rather than static QA-only benchmarks
+
 This repository treats a `visual agent` as a system that closes the loop between:
+
 - `visual perception`
 - `grounding and localization`
 - `reasoning and planning`
 - `memory or state tracking`
 - `tool use or environment interaction`
 - `action, creation, or control`
+
 The current pass was refreshed on `2026-05-16` against official `arXiv`, `GitHub`, and developer-documentation sources.
+
 [Back to top](#top)
+
 ---
+
 ## What Counts as a Visual Agent
+
 This list **includes**:
+
 - screenshot-grounded GUI agents
 - browser, desktop, and mobile computer-use agents
 - embodied vision-language-action systems
 - agentic visual reasoning systems with explicit tool use, retrieval, zoom, or iterative observation
 - agentic visual creation systems with planning, reflection, or verifier loops
 - evaluation suites, harnesses, environments, runtimes, skills, and data engines used to build or test the above
+
 This list **excludes by default**:
+
 - generic OCR, captioning, or layout models without agentic use
 - broad multimodal foundation models that are not benchmarked or framed as agents
 - image generation models that are only prompt-in / image-out
 - non-visual agents whose main loop does not depend on visual grounding
 - flat paper dumps without clear builder or research value
+
 [Back to top](#top)
+
 ---
 ## 2026 Radar
 | Work | Date | Links | Why It Matters |
