@@ -1,21 +1,20 @@
 ```md
-<a id="top"></a>
 <div align="center">
-# Awesome Visual Agent
-**A research-driven map of visual agents that perceive, ground, plan, act, create, and evaluate in pixel-grounded environments.**
-<p>
-  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
-  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/stargazers"><img src="https://img.shields.io/github/stars/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub stars"></a>
-  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/network/members"><img src="https://img.shields.io/github/forks/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub forks"></a>
-  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
-  <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/commits/main"><img src="https://img.shields.io/github/last-commit/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="Last Commit"></a>
-</p>
-<p>
-  <img alt="scope" src="https://img.shields.io/badge/scope-visual%20agents-0f766e?style=for-the-badge">
-  <img alt="coverage" src="https://img.shields.io/badge/coverage-2023--2026-c2410c?style=for-the-badge">
-  <img alt="boundary" src="https://img.shields.io/badge/boundary-agentic%20only-111111?style=for-the-badge">
-  <img alt="updated" src="https://img.shields.io/badge/updated-2026--05--16-1d4ed8?style=for-the-badge">
-</p>
+  <h1>Awesome Visual Agent</h1>
+  <p><strong>A research-driven map of visual agents that perceive, ground, plan, act, create, and evaluate in pixel-grounded environments.</strong></p>
+  <p>
+    <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
+    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/stargazers"><img src="https://img.shields.io/github/stars/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub stars"></a>
+    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/network/members"><img src="https://img.shields.io/github/forks/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="GitHub forks"></a>
+    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+    <a href="https://github.com/OpenEnvision/Awesome-Visual-Agent/commits/main"><img src="https://img.shields.io/github/last-commit/OpenEnvision/Awesome-Visual-Agent?style=flat-square" alt="Last Commit"></a>
+  </p>
+  <p>
+    <img alt="scope" src="https://img.shields.io/badge/scope-visual%20agents-0f766e?style=for-the-badge">
+    <img alt="coverage" src="https://img.shields.io/badge/coverage-2023--2026-c2410c?style=for-the-badge">
+    <img alt="boundary" src="https://img.shields.io/badge/boundary-agentic%20only-111111?style=for-the-badge">
+    <img alt="updated" src="https://img.shields.io/badge/updated-2026--05--16-1d4ed8?style=for-the-badge">
+  </p>
 </div>
 > [!IMPORTANT]
 > This repository is intentionally **not** a generic multimodal-model list. It focuses on systems that close the loop between
@@ -121,6 +120,7 @@ This list **excludes by default**:
 | World-Value-Action | 2026-04-16 | [![arXiv](https://img.shields.io/badge/arXiv-2604.14732-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.14732) | Latent planning and future-state evaluation for embodied agents |
 | ImAgent | 2025-11 | [![arXiv](https://img.shields.io/badge/arXiv-2511.11483-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.11483) | Training-free unified multimodal agent framework for test-time scalable image generation |
 | GenArtist | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-2407.05600-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.05600) [![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-0f766e?logo=neurips&logoColor=white)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e7c786024ca718f2487712bfe9f51030-Abstract-Conference.html) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/zhenyuw16/GenArtist) | MLLM as agent for unified image generation and editing via tool selection and planning |
+| SAGE | 2026-02-12 | [![arXiv](https://img.shields.io/badge/arXiv-2602.10116-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.10116) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/NVlabs/sage) | Scalable agentic 3D scene generation for embodied AI |
 [Back to top](#top)
 ---
 ## Taxonomy at a Glance
@@ -237,9 +237,8 @@ This list **excludes by default**:
 | GUI-Perturbed | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.14262-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.14262) | Strong diagnostic benchmark for perturbation robustness in GUI grounding |
 | HazardArena | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.12447-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.12447) | Safety benchmark for semantic hazards in VLA systems |
 | DynamicGUIBench | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.25380-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.25380) | Introduces DynamicGUIBench and shows why single-frame agents fail in evolving interfaces |
-| ViMax | 2025 | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/HKUDS/ViMax) | Agentic video generation framework orchestrating scriptwriting, storyboarding, and video production |
-| Mora | 2025 | [![OpenReview](https://img.shields.io/badge/OpenReview-2025-0f766e?logo=openreview&logoColor=white)](https://openreview.net/forum?id=S7F7IMGX4O) | Multi-agent text-to-video framework achieving Sora-level performance on VBench |
-| VideoAgent | 2024–2025 | [![arXiv](https://img.shields.io/badge/arXiv-2410.10076-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2410.10076) | Self-improving video generation agent using self-conditioning consistency and environment feedback |
+| ViMax | 2025–2026 | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/HKUDS/ViMax) | Agentic video generation framework orchestrating scriptwriting, storyboarding, and video production |
+| Mora | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-2403.13248-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2403.13248) | Multi-agent text-to-video framework achieving Sora-level performance on VBench |
 | SAGE | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2602.10116-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.10116) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/NVlabs/sage) | Scalable agentic 3D scene generation for embodied AI; MCP-style agent calling layout and object generators |
 [Back to top](#top)
 ---
