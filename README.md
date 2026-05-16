@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# Awesome Visual Agent
+# Awesome Visual Agent 
 
 **A research-driven map of visual agents that perceive, ground, plan, act, create, and evaluate in pixel-grounded environments.**
 
