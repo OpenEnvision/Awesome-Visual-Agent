@@ -148,6 +148,7 @@ This list **excludes by default**:
 | GenArtist | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-2407.05600-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.05600) [![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-0f766e?logo=neurips&logoColor=white)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e7c786024ca718f2487712bfe9f51030-Abstract-Conference.html) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/zhenyuw16/GenArtist) | MLLM as agent for unified image generation and editing via tool selection and planning |
 | SAGE | 2026-02-12 | [![arXiv](https://img.shields.io/badge/arXiv-2602.10116-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.10116) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/NVlabs/sage) | Scalable agentic 3D scene generation for embodied AI |
 [Back to top](#top)
+
 ---
 ## Taxonomy at a Glance
 | Track | Core Question | Typical Outputs | Strong Starting Points |
@@ -159,6 +160,7 @@ This list **excludes by default**:
 | Evaluation and Harness | How do we benchmark grounded perception, tool use, memory, safety, and control? | environments, eval suites, leaderboards, diagnostics | VisualWebArena, OSWorld, AndroidWorld, CUA-Suite |
 | Builder Stack | What should researchers and engineers actually install to prototype and evaluate visual agents? | skills, parsers, runtimes, sandboxes, robotics stacks | skill-installer, OmniParser, BrowserGym, LeRobot |
 [Back to top](#top)
+
 ---
 ## Link Badge Legend
 - Paper: [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/XXXX.XXXXX)
@@ -180,6 +182,7 @@ This list **excludes by default**:
 | Vision-Language-Action Safety: Survey, Taxonomy, Challenges and Future Directions | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.23775-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.23775) | The most timely safety framing for VLA deployment and evaluation |
 | Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.28185-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.28185) | Best recent roadmap if you care specifically about agentic visual creation rather than plain generation |
 [Back to top](#top)
+
 ---
 ### 2. Perception, Grounding, and Active Visual Observation
 | Work | Year | Links | Notes |
@@ -199,6 +202,7 @@ This list **excludes by default**:
 | GUI-Eyes | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2601.09770-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.09770) | One of the best recent examples of perception improving through explicit tool use |
 | UI-Zoomer | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.14113-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.14113) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/UI-Zoomer) | Practical zoom-in mechanism for dense, high-resolution, and small-target UIs |
 [Back to top](#top)
+
 ---
 ### 3. GUI and Computer-Use Agents
 | Work | Year | Links | Notes |
@@ -221,6 +225,7 @@ This list **excludes by default**:
 | UI-Copilot | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.13822-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13822) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/UI-Copilot) | Long-horizon automation with retrieval and calculator tools integrated into policy learning |
 | OS-Symphony | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2601.07779-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.07779) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/OS-Copilot/OS-Symphony) | Strong recent system on memory, reflection, and tutorial retrieval for computer use |
 [Back to top](#top)
+
 ---
 ### 4. Embodied Vision-Language-Action Agents
 | Work | Year | Links | Notes |
@@ -234,6 +239,7 @@ This list **excludes by default**:
 | StemVLA | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2602.23721-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.23721) | Incorporates future 3D geometry and 4D historical context into action prediction |
 | World-Value-Action Model | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.14732-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.14732) | Worth tracking for long-horizon latent planning and implicit future evaluation |
 [Back to top](#top)
+
 ---
 ### 5. Agentic Image Generation, Editing, and Search
 | Work | Year | Links | Notes |
@@ -251,6 +257,7 @@ This list **excludes by default**:
 | GenArtist | 2024 | [![arXiv](https://img.shields.io/badge/arXiv-2407.05600-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.05600) [![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-0f766e?logo=neurips&logoColor=white)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e7c786024ca718f2487712bfe9f51030-Abstract-Conference.html) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/zhenyuw16/GenArtist) | MLLM as agent for unified image generation and editing via tool selection and planning |
 | Agent Banana | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2602.09084-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09084) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/taco-group/agent-banana) | Hierarchical planner–executor for high-fidelity object-aware editing with 4K HDD-Bench |
 [Back to top](#top)
+
 ---
 ### 6. Video, 3D, and World-Construction Agents
 | Work | Year | Links | Notes |
@@ -267,6 +274,7 @@ This list **excludes by default**:
 | Mora | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-2403.13248-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2403.13248) | Multi-agent text-to-video framework achieving Sora-level performance on VBench |
 | SAGE | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2602.10116-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.10116) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/NVlabs/sage) | Scalable agentic 3D scene generation for embodied AI; MCP-style agent calling layout and object generators |
 [Back to top](#top)
+
 ---
 ### 7. Agentic Visual Foundation Models
 These are multimodal foundation models explicitly positioned as **agents** or with strong computer-use / tool-calling capabilities, not just generic VLMs.
@@ -279,6 +287,7 @@ These are multimodal foundation models explicitly positioned as **agents** or wi
 | Anthropic Claude 3.5 / 3.5 Haiku with computer use | 2025 | [![Docs](https://img.shields.io/badge/Docs-Anthropic_CU-2563eb?logo=readthedocs&logoColor=white)](https://www.anthropic.com/news/developing-computer-use) | Public engineering writeup on GUI-agent development and deployment with Claude |
 | Gemini Robotics / On-Device | 2025–2026 | [![Docs](https://img.shields.io/badge/Docs-Gemini_Robotics-2563eb?logo=readthedocs&logoColor=white)](https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/) | Frontier industry view on embodied visual agents and on-device VLA deployment |
 [Back to top](#top)
+
 ---
 ### 8. Safety, Reliability, and Evaluation
 | Work | Year | Links | Notes |
@@ -289,6 +298,7 @@ These are multimodal foundation models explicitly positioned as **agents** or wi
 | Vision-Language-Action Safety | 2026 | [![arXiv](https://img.shields.io/badge/arXiv-2604.23775-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.23775) | Strong safety survey for VLA deployment and evaluation |
 | CIGEval | 2025 | [![arXiv](https://img.shields.io/badge/arXiv-2504.07046-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.07046) | Agentic evaluation framework for conditional image generation |
 [Back to top](#top)
+
 ---
 ### 9. Data Engines, Demonstration Pipelines, and Open Foundations
 | Work | Year | Links | Notes |
@@ -304,6 +314,7 @@ These are multimodal foundation models explicitly positioned as **agents** or wi
 | OpenAdapt-ML | ongoing | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/OpenAdaptAI/openadapt-ml) | Model-training layer for turning captured interaction data into agent pipelines |
 | ScreenPipe | ongoing | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/screenpipe/screenpipe) | Continuous screen capture and local memory substrate for long-running visual agents |
 [Back to top](#top)
+
 ---
 ## Skills, Tools, and Harnesses
 ### Core Skills and Prompt Libraries
@@ -325,6 +336,7 @@ $skill-installer
 Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tree/main/skills/gpt-image
 ```
 [Back to top](#top)
+
 ---
 ### Perception, Parsing, and Grounding Tools
 | Tool | Type | Links | Best For |
@@ -335,6 +347,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | UI-Zoomer | zoom-in utility | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/ZJU-REAL/UI-Zoomer) | Useful whenever small icons, dense ribbons, or high-resolution UIs break direct grounding |
 | ShowUI | VLA-style GUI model stack | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/showlab/ShowUI) | Useful reference implementation when you want a unified screenshot-to-action pipeline |
 [Back to top](#top)
+
 ---
 ### Agent Runtimes, Sandboxes, and Operator Stacks
 | Stack | Type | Links | Best For |
@@ -346,6 +359,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | OpenAdapt | operator and desktop automation stack | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/OpenAdaptAI/OpenAdapt) | Desktop control, data capture, evaluation, and agent-building utilities in one ecosystem |
 | ScreenPipe | local screen-memory runtime | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/screenpipe/screenpipe) | Persistent visual memory and capture for long-running assistants and operator loops |
 [Back to top](#top)
+
 ---
 ### Harnesses, Eval Suites, and Benchmark Orchestration
 | Resource | Type | Links | Best For |
@@ -361,6 +375,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | EmbodiedBench | embodied-agent benchmark | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/EmbodiedBench/EmbodiedBench) | Unified benchmark layer for embodied multimodal agents |
 | DoomArena | safety and stress benchmark | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/trycua/doom-arena) | Useful stress-testing environment for agent robustness and control |
 [Back to top](#top)
+
 ---
 ### Demonstration Capture and Data Tooling
 | Resource | Type | Links | Why It Is Useful |
@@ -374,6 +389,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | Video2GUI | trajectory synthesis | [![arXiv](https://img.shields.io/badge/arXiv-2605.14747-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.14747) | Fresh 2026 pipeline for turning tutorial videos into large-scale pretraining trajectories |
 | ScreenPipe | continuous capture and memory | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/screenpipe/screenpipe) | Helpful for memory-heavy assistants and screen-native agents |
 [Back to top](#top)
+
 ---
 ### Embodied and Robotics Tooling
 | Tool | Type | Links | Best For |
@@ -385,7 +401,9 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | RLBench | robot learning environment | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/stepjam/RLBench) | Widely used manipulation benchmark environment for embodied control research |
 | EmbodiedBench | multimodal embodied evaluation | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/EmbodiedBench/EmbodiedBench) | Convenient benchmark layer for comparing embodied multimodal agents |
 [Back to top](#top)
+
 ---
+
 ## Benchmarks and Environments
 | Area | Benchmark / Environment | Links | Why It Matters |
 | --- | --- | --- | --- |
@@ -414,7 +432,9 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | Embodied | LIBERO | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/Lifelong-Robot-Learning/LIBERO) | Continual manipulation benchmark widely used in robot learning |
 | Embodied | RLBench | [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white)](https://github.com/stepjam/RLBench) | Strong manipulation environment for embodied control evaluation |
 [Back to top](#top)
+
 ---
+
 ## Official Docs and Engineering Notes
 | Resource | Links | Why Read It |
 | --- | --- | --- |
@@ -427,7 +447,9 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | Kimi K2.5 Tech Blog | [![Docs](https://img.shields.io/badge/Docs-Kimi-2563eb?logo=readthedocs&logoColor=white)](https://www.kimi.com/blog/kimi-k2-5) | Official blog on visual agentic intelligence and parallel agent orchestration |
 | SenseNova U1 Docs | [![Docs](https://img.shields.io/badge/Docs-SenseNova-2563eb?logo=readthedocs&logoColor=white)](https://www.sensenova.cn/models) | Practical docs on native multimodal agent models for real workflows |
 [Back to top](#top)
+
 ---
+
 ## Suggested Reading Paths
 ### Path A: GUI and Computer-Use Agent Builder
 1. [SeeClick](https://arxiv.org/abs/2401.10935)
@@ -476,6 +498,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 12. [Agent Banana](https://arxiv.org/abs/2602.09084)
 [Back to top](#top)
 ---
+
 ## Build Paths by Workflow
 | Workflow | Recommended Stack |
 | --- | --- |
@@ -488,7 +511,9 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | Embodied VLA experimentation | `OpenVLA` + `LeRobot` + `LIBERO` + `RLBench` + `EmbodiedBench` |
 | Agentic visual foundation model research | `Kimi K2.5` + `Qwen3.6-35B-A3B` + `SenseNova-U1` + `OpenAI CUA` + `Anthropic Claude 3.5 computer use` |
 [Back to top](#top)
+
 ---
+
 ## Related Awesome Repositories
 | Repository | Links | Notes |
 | --- | --- | --- |
@@ -502,6 +527,7 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 | awesome-agents | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/kyrolabs/awesome-agents) | General agent frameworks and tools; good for understanding broader agent runtimes |
 | Awesome-AI-Agents | [![GitHub](https://img.shields.io/badge/GitHub-Project-181717?logo=github&logoColor=white)](https://github.com/Jenqyang/Awesome-AI-Agents) | Collection of LLM-based autonomous agents; helpful for cross-referencing agent architectures |
 [Back to top](#top)
+
 ---
 ## Curation Principles
 - Prefer works that define a new capability, benchmark, training recipe, or systems bottleneck for agentic visual systems.
@@ -513,8 +539,10 @@ Install this skill from GitHub: https://github.com/wuyoscar/gpt_image_2_skill/tr
 [Back to top](#top)
 ---
 ## Maintained By
-This repository is maintained by the **OpenEnvision** community and contributors. If you’d like to help maintain or curate specific tracks (e.g., GUI agents, embodied VLA, agentic visual creation), please open an issue or pull request.
+
+This repository is maintained by the **OpenEnvision**. If you’d like to help maintain or curate specific tracks (e.g., GUI agents, embodied VLA, agentic visual creation), please open an issue or pull request.
 [Back to top](#top)
+
 ---
 ## How to Contribute
 Pull requests are warmly welcome, especially for:
@@ -549,6 +577,7 @@ If you find this curated list useful for your research or engineering work, plea
 ## License
 This repository is released under the **MIT License**, unless otherwise stated for specific externally linked projects.
 [Back to top](#top)
+
 ---
 ## Contributing
 See [How to Contribute](#how-to-contribute) for current guidelines. In short:
