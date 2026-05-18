@@ -22,12 +22,6 @@
 </p>
 </div>
 
-> [!IMPORTANT]
-> This repository is intentionally **not** a generic multimodal-model list. It focuses on systems that close the loop between
-> **visual perception**, **grounding**, **reasoning**, **memory**, **tool use**, **action**, and, where appropriate,
-> **agentic visual creation**. Broad VLMs, generic image generators, and non-agentic multimodal models are deliberately
-> excluded unless they are directly central to a visual-agent workflow, benchmark, or tooling stack.
-
 > [!TIP]
 > If this repository saves you reading time or helps you build visual agents faster, please consider **starring** it
 > and opening a **pull request** for missing papers, tools, benchmarks, or systems notes.
