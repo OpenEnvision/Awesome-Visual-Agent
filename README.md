@@ -1,26 +1,30 @@
 <a id="top"></a>
 
+<div align="center">
+
 # Awesome Visual Agent
+
+**A curated research index for visual agents that perceive, ground, plan, act, create, and evaluate in visually grounded environments.**
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Scope](https://img.shields.io/badge/scope-visual%20agents-0f766e)
-![Curated](https://img.shields.io/badge/style-curated%2C%20not%20exhaustive-111827)
-![Last Checked](https://img.shields.io/badge/checked-2026--05--18-2563eb)
+![Boundary](https://img.shields.io/badge/boundary-agentic%20visual%20systems-111827)
+![Style](https://img.shields.io/badge/style-curated%20research%20map-2563eb)
 
-A curated map of visual agents: systems that use visual observations to ground, plan, act, create, or evaluate inside GUIs, browsers, desktops, phones, robots, videos, 3D worlds, or visual-generation workflows.
+</div>
 
-This list is intentionally selective. It favors papers, benchmarks, and open systems that introduce a concrete agent loop, action space, evaluation environment, data engine, or reliability finding. It does not try to collect every multimodal model, OCR system, captioning model, or prompt-in/image-out generator.
+Visual agents occupy the intersection of multimodal perception, grounded reasoning, tool use, interaction, and control. This repository curates papers, benchmarks, datasets, runtimes, and engineering resources for systems that close the loop between visual observation and purposeful action.
 
-Last checked: 2026-05-18.
+The list is selective rather than exhaustive. It prioritizes works that introduce a clear agent loop, action space, evaluation protocol, data engine, safety finding, or reusable implementation artifact, while excluding generic multimodal models and one-shot visual-generation systems without an agentic mechanism.
 
 ## Contents
 
-- [Scope](#scope)
-- [Taxonomy](#taxonomy)
+- [Selection Boundary](#selection-boundary)
+- [Research Taxonomy](#research-taxonomy)
 - [Curation Rubric](#curation-rubric)
-- [Fast Reading Paths](#fast-reading-paths)
-- [Recent Highlights](#recent-highlights)
-- [Papers](#papers)
+- [Reading Pathways](#reading-pathways)
+- [Recent Additions](#recent-additions)
+- [Research Map](#research-map)
   - [Surveys and Landscape](#surveys-and-landscape)
   - [GUI Grounding and Screen Perception](#gui-grounding-and-screen-perception)
   - [Computer-Use Agents and Environments](#computer-use-agents-and-environments)
@@ -38,18 +42,18 @@ Last checked: 2026-05-18.
 - [Official Docs and Engineering Notes](#official-docs-and-engineering-notes)
 - [Related Lists](#related-lists)
 - [Contributing](#contributing)
-- [Curation Notes](#curation-notes)
+- [Maintenance Policy](#maintenance-policy)
 - [Citation](#citation)
 
-## Scope
+## Selection Boundary
 
-Included:
+Included areas:
 
 - GUI, web, desktop, and mobile agents that perceive screens and produce executable actions.
 - Visual grounding work that is clearly tied to downstream agent control.
 - Embodied vision-language-action systems for robot manipulation, navigation, and physical-world interaction.
 - Agentic visual reasoning and generation systems with search, planning, memory, tools, critique, or iterative refinement.
-- Benchmarks, data engines, simulators, safety suites, and toolchains that make visual agents easier to build or evaluate.
+- Benchmarks, data engines, simulators, safety suites, and toolchains that support visual-agent construction and evaluation.
 
 Excluded by default:
 
@@ -60,16 +64,16 @@ Excluded by default:
 
 [Back to top](#top)
 
-## Taxonomy
+## Research Taxonomy
 
-| Track | Core question | Representative starting points |
+| Track | Research question | Representative works |
 | --- | --- | --- |
 | Screen grounding | Can the model localize text, widgets, controls, and regions well enough to act? | Set-of-Mark, SeeClick, OmniParser, UGround, ScreenSpot-Pro, GUI-Eyes |
 | Computer use | Can the agent complete tasks in real websites, desktops, or phones over multiple steps? | WebArena, WebLINX, AppAgent, Mobile-Agent, OSWorld, AndroidWorld, Agent S, UI-TARS |
 | Embodied VLA | Can visual observations and language be converted into safe physical actions? | PerAct, VIMA, RT-1, RT-2, Open X-Embodiment, OpenVLA, Pi-Zero, Magma |
 | Agentic reasoning and creation | Can the system plan, search, critique, edit, or generate visual artifacts through a loop? | VISPROG, ViperGPT, GenArtist, DeepEyes, Agent Banana, VisionCreator, GEMS |
 | Reliability and safety | Can we measure brittleness, privacy risk, prompt injection, unsafe actions, and deployment readiness? | VPI-Bench, OpenAgentSafety, OS-BLIND, HazardArena, UI-CUBE |
-| Infrastructure | What should builders actually install to train, run, or evaluate visual agents? | BrowserGym, AgentLab, Stagehand, Playwright MCP, Agent S, Cua, OpenCUA, ScaleCUA, LeRobot |
+| Infrastructure | Which tools and environments support reproducible training, deployment, and evaluation? | BrowserGym, AgentLab, Stagehand, Playwright MCP, Agent S, Cua, OpenCUA, ScaleCUA, LeRobot |
 
 [Back to top](#top)
 
@@ -86,7 +90,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 [Back to top](#top)
 
-## Fast Reading Paths
+## Reading Pathways
 
 **GUI and computer use.** Start with [SeeClick](https://arxiv.org/abs/2401.10935), [OmniParser](https://arxiv.org/abs/2408.00203), [OSWorld](https://arxiv.org/abs/2404.07972), [UI-TARS](https://arxiv.org/abs/2501.12326), [Agent S2](https://arxiv.org/abs/2504.00906), [OpenCUA](https://arxiv.org/abs/2508.09123), and [UI-Copilot](https://arxiv.org/abs/2604.13822).
 
@@ -100,9 +104,9 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 [Back to top](#top)
 
-## Recent Highlights
+## Recent Additions
 
-| Work | Date | Why keep it |
+| Work | Date | Contribution / Relevance |
 | --- | --- | --- |
 | [GUI-Eyes](https://arxiv.org/abs/2601.09770) | 2026-01 | Active visual perception for GUI grounding with learned crop/zoom tool use. |
 | [ShowUI-Aloha](https://arxiv.org/abs/2601.07181) | 2026-01 | Converts human screen recordings into structured GUI-agent supervision. |
@@ -124,29 +128,29 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 [Back to top](#top)
 
-## Papers
+## Research Map
 
 ### Surveys and Landscape
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | A Comprehensive Survey of Agents for Computer Use | 2025 | [paper](https://arxiv.org/abs/2501.16150) | Broad map of computer-use-agent domains, agent loops, and evaluation bottlenecks. |
 | GUI Agents: A Survey | 2024 | [paper](https://arxiv.org/abs/2412.13501) | Practical survey of GUI-agent architectures, datasets, benchmarks, and failure modes. |
 | A Survey on (M)LLM-Based GUI Agents | 2025 | [paper](https://arxiv.org/abs/2504.13865) | Focused entry point for planning, grounding, memory, and GUI-agent evaluation. |
 | Towards Trustworthy GUI Agents | 2025 | [paper](https://arxiv.org/abs/2503.23434) | Reliability and safety framing for deployment-facing GUI agents. |
-| Large Multimodal Agents: A Survey | 2024 | [paper](https://arxiv.org/abs/2402.15116) | Useful background on LLM-driven multimodal agent components. |
+| Large Multimodal Agents: A Survey | 2024 | [paper](https://arxiv.org/abs/2402.15116) | Contextual background on LLM-driven multimodal agent components. |
 | A Survey on Vision-Language-Action Models for Embodied AI | 2024 | [paper](https://arxiv.org/abs/2405.14093) | Early VLA survey covering embodied perception, planning, and action. |
 | Vision-Language-Action in Robotics | 2026 | [paper](https://arxiv.org/abs/2604.23001) | Data-centric survey of VLA datasets, benchmarks, and data engines. |
 | Vision-Language-Action Safety | 2026 | [paper](https://arxiv.org/abs/2604.23775) | Focused taxonomy of threats, evaluations, and defenses for VLA systems. |
 | Safety in Embodied AI | 2026 | [paper](https://arxiv.org/abs/2605.02900) | Wider safety survey across perception, planning, action, and interaction. |
-| Visual Generation in the New Era | 2026 | [paper](https://arxiv.org/abs/2604.28185) | Useful lens for when visual generation becomes agentic world modeling. |
+| Visual Generation in the New Era | 2026 | [paper](https://arxiv.org/abs/2604.28185) | Conceptual lens for when visual generation becomes agentic world modeling. |
 | Securing Computer-Use Agents | 2026 | [paper](https://arxiv.org/abs/2605.07110) | Deployment-grounded view of CUA reliability across architecture, lifecycle, permissions, and oversight. |
 
 [Back to top](#top)
 
 ### GUI Grounding and Screen Perception
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | CogAgent | 2023 | [paper](https://arxiv.org/abs/2312.08914), [code](https://github.com/THUDM/CogAgent) | Early high-resolution VLM built explicitly for GUI understanding and navigation. |
 | Set-of-Mark Prompting | 2023 | [paper](https://arxiv.org/abs/2310.11441), [code](https://github.com/microsoft/SoM) | Simple visual marking strategy that became a practical grounding primitive for LMM agents. |
@@ -173,12 +177,12 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ### Computer-Use Agents and Environments
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | Mind2Web | 2023 | [paper](https://arxiv.org/abs/2306.06070) | Foundational benchmark for generalist web agents. |
 | Android in the Wild | 2023 | [paper](https://arxiv.org/abs/2307.10088) | Large-scale Android device-control dataset with realistic gestures. |
 | WebArena | 2023 | [paper](https://arxiv.org/abs/2307.13854), [code](https://github.com/web-arena-x/webarena) | Realistic web-agent environment with execution-based tasks. |
-| AutoDroid | 2023 | [paper](https://arxiv.org/abs/2308.15272) | Early Android task-automation system and benchmark useful as a mobile-agent baseline. |
+| AutoDroid | 2023 | [paper](https://arxiv.org/abs/2308.15272) | Early Android task-automation system and benchmark that remains relevant as a mobile-agent baseline. |
 | MM-Navigator | 2023 | [paper](https://arxiv.org/abs/2311.07562) | Early GPT-4V smartphone GUI navigation agent with zero-shot screen interaction. |
 | AppAgent | 2023 | [paper](https://arxiv.org/abs/2312.13771) | Smartphone agent that learns app operation from autonomous exploration or demonstrations. |
 | SeeAct | 2024 | [paper](https://arxiv.org/abs/2401.01614) | Web agent showing why grounding matters for GPT-4V-style agents. |
@@ -225,7 +229,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ### Embodied Vision-Language-Action Agents
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | PerAct | 2022 | [paper](https://arxiv.org/abs/2209.05451), [project](https://peract.github.io/) | Language-conditioned RGB-D manipulation agent that predicts voxel actions directly. |
 | VIMA | 2022 | [paper](https://arxiv.org/abs/2210.03094), [project](https://vimalabs.github.io/) | Multimodal-prompt robot manipulation benchmark and transformer agent. |
@@ -249,7 +253,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ### Agentic Visual Reasoning, Generation, and World Building
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | VISPROG | 2022 | [paper](https://arxiv.org/abs/2211.11559), [project](https://prior.allenai.org/projects/visprog) | Foundational visual-programming approach for tool-composed visual reasoning and editing. |
 | Visual ChatGPT | 2023 | [paper](https://arxiv.org/abs/2303.04671), [code](https://github.com/chenfei-wu/TaskMatrix) | Early system connecting ChatGPT with visual foundation models for multi-step visual tasks. |
@@ -272,7 +276,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ### Safety, Robustness, and Evaluation
 
-| Work | Year | Links | Why keep it |
+| Work | Year | Links | Contribution / Relevance |
 | --- | --- | --- | --- |
 | AGENTSAFE | 2025 | [paper](https://arxiv.org/abs/2506.14697) | Safety benchmark for embodied agents under hazardous instructions. |
 | IS-Bench | 2025 | [paper](https://arxiv.org/abs/2506.16402) | Interactive safety benchmark for VLM-driven household agents. |
@@ -294,7 +298,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ## Benchmarks and Environments
 
-| Area | Resource | Link | Best used for |
+| Area | Resource | Link | Primary Use |
 | --- | --- | --- | --- |
 | Web | MiniWoB++ | [code](https://github.com/Farama-Foundation/miniwob-plusplus) | Compact browser-interaction environments for controlled RL-style experiments. |
 | Web | Mind2Web | [paper](https://arxiv.org/abs/2306.06070) | Offline web-agent action prediction and grounding. |
@@ -334,11 +338,11 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ## Skills, Tools, and Engineering Resources
 
-These resources are intentionally separated from papers. They are useful when you are building or evaluating systems, but they are not all research contributions.
+These resources are intentionally separated from research papers. They are implementation and evaluation artifacts rather than, in every case, standalone research contributions.
 
 ### Skill and Prompt Libraries
 
-| Resource | Type | Link | Best used for |
+| Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | OpenAI Skills guide | docs | [Docs](https://developers.openai.com/api/docs/guides/tools-skills) | Understanding skill-style packaging for reusable agent capabilities. |
 | awesome-agent-skills | collection | [GitHub](https://github.com/VoltAgent/awesome-agent-skills) | Finding reusable agent skills across browsing, coding, documents, and visual tasks. |
@@ -348,7 +352,7 @@ These resources are intentionally separated from papers. They are useful when yo
 
 ### Models, Parsers, and Grounding Tools
 
-| Resource | Type | Link | Best used for |
+| Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | OmniParser | parser | [GitHub](https://github.com/microsoft/OmniParser) | Converting screenshots into candidate interactable regions. |
 | ShowUI | GUI model | [GitHub](https://github.com/showlab/ShowUI) | Screenshot-conditioned GUI action modeling and demonstration pipelines. |
@@ -360,7 +364,7 @@ These resources are intentionally separated from papers. They are useful when yo
 
 ### Agent Runtimes and Operator Stacks
 
-| Resource | Type | Link | Best used for |
+| Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | UI-TARS Desktop | desktop agent | [GitHub](https://github.com/bytedance/UI-TARS-desktop) | Running multimodal desktop agents locally. |
 | Agent S | runtime | [GitHub](https://github.com/simular-ai/Agent-S) | General computer-use experiments with a practical open framework. |
@@ -376,7 +380,7 @@ These resources are intentionally separated from papers. They are useful when yo
 
 ### Data Capture, Training, and Evaluation Stacks
 
-| Resource | Type | Link | Best used for |
+| Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | OSWorld | desktop environment | [GitHub](https://github.com/xlang-ai/OSWorld) | Standard desktop benchmark and environment. |
 | AndroidWorld | mobile environment | [GitHub](https://github.com/google-research/android_world) | Dynamic Android environment for mobile agents. |
@@ -395,7 +399,7 @@ These resources are intentionally separated from papers. They are useful when yo
 
 ### Embodied and Robotics Tooling
 
-| Resource | Type | Link | Best used for |
+| Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | OpenVLA | VLA model | [GitHub](https://github.com/openvla/openvla) | Common open baseline for VLA robot manipulation. |
 | LeRobot | robotics toolkit | [GitHub](https://github.com/huggingface/lerobot) | Robot-learning datasets, policies, training, and deployment tooling. |
@@ -430,7 +434,7 @@ These resources are intentionally separated from papers. They are useful when yo
 | OpenAI Skills guide | [Docs](https://developers.openai.com/api/docs/guides/tools-skills) | Practical reference for reusable agent skills. |
 | OpenAI MCP and Connectors guide | [Docs](https://developers.openai.com/api/docs/guides/tools-connectors-mcp) | Reference for connecting external tools and services to agents. |
 | Anthropic: Developing a computer use model | [Article](https://www.anthropic.com/news/developing-computer-use) | Strong public engineering writeup on GUI-agent training and evaluation. |
-| Anthropic: Introducing computer use | [Article](https://www.anthropic.com/news/3-5-models-and-computer-use) | Useful system framing and deployment context. |
+| Anthropic: Introducing computer use | [Article](https://www.anthropic.com/news/3-5-models-and-computer-use) | System framing and deployment context for computer-use models. |
 | Google DeepMind: Gemini Robotics | [Article](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/) | Industry view on embodied visual agents. |
 | Google DeepMind: Gemini Robotics On-Device | [Article](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | Notes on low-latency, local VLA deployment. |
 
@@ -440,10 +444,10 @@ These resources are intentionally separated from papers. They are useful when yo
 
 | Repository | Link | Notes |
 | --- | --- | --- |
-| Awesome-GUI-Agents | [GitHub](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | Strong companion list for GUI grounding and automation papers. |
+| Awesome-GUI-Agents | [GitHub](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | Focused companion index for GUI grounding and automation papers. |
 | GUI-Agents-Paper-List | [GitHub](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | Systematic paper index focused on GUI agents. |
-| awesome-ui-agents | [GitHub](https://github.com/opendilab/awesome-ui-agents) | Useful neighboring list for UI-agent papers and projects. |
-| Evolving Visual Generation | [GitHub](https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation) | Good adjacent map for visual-generation systems. |
+| awesome-ui-agents | [GitHub](https://github.com/opendilab/awesome-ui-agents) | Neighboring index for UI-agent papers and projects. |
+| Evolving Visual Generation | [GitHub](https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation) | Adjacent map for visual-generation systems. |
 | Awesome Multimodal Modeling | [GitHub](https://github.com/OpenEnvision/Awesome-Multimodal-Modeling) | Broader multimodal modeling list beyond the stricter agent boundary here. |
 
 [Back to top](#top)
@@ -452,14 +456,14 @@ These resources are intentionally separated from papers. They are useful when yo
 
 Pull requests are welcome when they improve precision rather than volume.
 
-Please include:
+Recommended metadata:
 
 - The paper title or project name.
 - Official paper, code, project page, or documentation link.
 - The best category for the item.
 - One sentence explaining the visual-agent loop, benchmark role, or builder value.
 
-Please avoid:
+Out of scope:
 
 - Generic multimodal model releases with no visual-agent evaluation.
 - One-shot generation papers without planning, tools, search, critique, or interaction.
@@ -468,22 +472,22 @@ Please avoid:
 
 [Back to top](#top)
 
-## Curation Notes
+## Maintenance Policy
 
-This repository is curated to stay useful rather than exhaustive:
+This repository is maintained as a precision-oriented research map:
 
-- Removed rows whose arXiv links resolved to unrelated papers or looked like generated placeholders.
-- Removed duplicate tool and benchmark sections that repeated the same entries.
-- Removed product-name-only entries without public papers, official technical notes, or stable builder value.
-- Removed broad multimodal, OCR, captioning, layout, and image-generation entries unless the work clearly participates in a visual-agent loop.
-- Corrected several IDs that were wrong in the previous draft, including Android in the Wild, GUI-G1, and B-MoCA.
-- Added higher-fit entries that were missing or underrepresented, including foundational visual tool-use work, mobile GUI agents, WebLINX/MMInA/WebCanvas, WebArena-Verified, RT-1/VIMA/PerAct, Stagehand, Playwright MCP, SaaS-Bench, VLAs-as-Tools, and several safety benchmarks.
+- Prefer primary sources: official papers, project pages, code repositories, datasets, benchmarks, and technical documentation.
+- Keep research entries, benchmarks, and engineering resources separated when their roles differ.
+- Add recent work only when it improves the conceptual coverage, empirical coverage, or builder utility of the map.
+- Verify arXiv identifiers, project links, and benchmark names before adding new entries.
+- Prune duplicate, weakly scoped, or marketing-only entries even when they are recent.
+- Preserve a strict visual-agent boundary: perception alone is not sufficient without grounding, planning, tool use, interaction, control, or agent-oriented evaluation.
 
 [Back to top](#top)
 
 ## Citation
 
-If this list helps your research or engineering work, you can cite it as:
+If you use this curated index in research or engineering work, please cite it as:
 
 ```bibtex
 @misc{awesome-visual-agent,
