@@ -30,6 +30,7 @@ The list is selective rather than exhaustive. It prioritizes works that introduc
   - [Computer-Use Agents and Environments](#computer-use-agents-and-environments)
   - [Embodied Vision-Language-Action Agents](#embodied-vision-language-action-agents)
   - [Agentic Visual Reasoning, Generation, and World Building](#agentic-visual-reasoning-generation-and-world-building)
+  - [General Visual Agents, Tool Use, and Visualization Agents](#general-visual-agents-tool-use-and-visualization-agents)
   - [Safety, Robustness, and Evaluation](#safety-robustness-and-evaluation)
 - [Benchmarks and Environments](#benchmarks-and-environments)
 - [Skills, Tools, and Engineering Resources](#skills-tools-and-engineering-resources)
@@ -68,12 +69,13 @@ Excluded by default:
 
 | Track | Research question | Representative works |
 | --- | --- | --- |
-| Screen grounding | Can the model localize text, widgets, controls, and regions well enough to act? | Set-of-Mark, SeeClick, OmniParser, UGround, ScreenSpot-Pro, GUI-Eyes |
-| Computer use | Can the agent complete tasks in real websites, desktops, or phones over multiple steps? | WebArena, WebLINX, AppAgent, Mobile-Agent, OSWorld, AndroidWorld, Agent S, UI-TARS |
-| Embodied VLA | Can visual observations and language be converted into safe physical actions? | PerAct, VIMA, RT-1, RT-2, Open X-Embodiment, OpenVLA, Pi-Zero, Magma |
-| Agentic reasoning and creation | Can the system plan, search, critique, edit, or generate visual artifacts through a loop? | VISPROG, ViperGPT, GenArtist, DeepEyes, Agent Banana, VisionCreator, GEMS |
-| Reliability and safety | Can we measure brittleness, privacy risk, prompt injection, unsafe actions, and deployment readiness? | VPI-Bench, OpenAgentSafety, OS-BLIND, HazardArena, UI-CUBE |
-| Infrastructure | Which tools and environments support reproducible training, deployment, and evaluation? | BrowserGym, AgentLab, Stagehand, Playwright MCP, Agent S, Cua, OpenCUA, ScaleCUA, LeRobot |
+| Screen grounding | Can the model localize text, widgets, controls, and regions well enough to act? | Set-of-Mark, SeeClick, OmniParser, UGround, ScreenSpot-Pro, GUI-Eyes, SafeGround, PAGER |
+| Computer use | Can the agent complete tasks in real websites, desktops, or phones over multiple steps? | WebArena, WebLINX, AppAgent, Mobile-Agent, OSWorld, AndroidWorld, Agent S, UI-TARS, WebGym, OpenComputer |
+| Embodied VLA | Can visual observations and language be converted into safe physical actions? | PerAct, VIMA, RT-1, RT-2, Open X-Embodiment, OpenVLA, Pi-Zero, Magma, VLA-REPLICA, Pre-VLA |
+| Agentic reasoning and creation | Can the system plan, search, critique, edit, or generate visual artifacts through a loop? | VISPROG, ViperGPT, DiffusionAgent, GenArtist, DeepEyes, Visual Agentic RFT, Agent Banana, VisionCreator, GEMS, GenEvolve |
+| General visual agents | Can multimodal agents build reusable visual skills, use visual tools, reason over video/charts/visualizations, and coordinate across visual contexts? | Orion, Kimi K2.5, MMSkills, VTC-Bench, VisualToolAgent, Visual Agentic Memory, HierVA, DV-World |
+| Reliability and safety | Can we measure brittleness, privacy risk, prompt injection, unsafe actions, and deployment readiness? | VPI-Bench, OpenAgentSafety, OS-BLIND, HazardArena, UI-CUBE, GUIDE, CORA, WARD |
+| Infrastructure | Which tools and environments support reproducible training, deployment, and evaluation? | BrowserGym, AgentLab, Stagehand, Playwright MCP, Agent S, Cua, OpenCUA, ScaleCUA, WebGym, C-World, LeRobot |
 
 [Back to top](#top)
 
@@ -92,15 +94,17 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 
 ## Reading Pathways
 
-**GUI and computer use.** Start with [SeeClick](https://arxiv.org/abs/2401.10935), [OmniParser](https://arxiv.org/abs/2408.00203), [OSWorld](https://arxiv.org/abs/2404.07972), [UI-TARS](https://arxiv.org/abs/2501.12326), [Agent S2](https://arxiv.org/abs/2504.00906), [OpenCUA](https://arxiv.org/abs/2508.09123), and [UI-Copilot](https://arxiv.org/abs/2604.13822).
+**GUI and computer use.** Start with [SeeClick](https://arxiv.org/abs/2401.10935), [OmniParser](https://arxiv.org/abs/2408.00203), [OSWorld](https://arxiv.org/abs/2404.07972), [UI-TARS](https://arxiv.org/abs/2501.12326), [Agent S2](https://arxiv.org/abs/2504.00906), [OpenCUA](https://arxiv.org/abs/2508.09123), [UI-Copilot](https://arxiv.org/abs/2604.13822), [WebGym](https://arxiv.org/abs/2601.02439), [MementoGUI](https://arxiv.org/abs/2605.18652), and [OpenComputer](https://arxiv.org/abs/2605.19769).
 
-**Mobile GUI agents.** Read [Android in the Wild](https://arxiv.org/abs/2307.10088), [MM-Navigator](https://arxiv.org/abs/2311.07562), [AppAgent](https://arxiv.org/abs/2312.13771), [Mobile-Agent](https://arxiv.org/abs/2401.16158), [Mobile-Agent-v2](https://arxiv.org/abs/2406.01014), [A3](https://arxiv.org/abs/2501.01149), and [MemGUI-Bench](https://arxiv.org/abs/2602.06075).
+**Mobile GUI agents.** Read [Android in the Wild](https://arxiv.org/abs/2307.10088), [MM-Navigator](https://arxiv.org/abs/2311.07562), [AppAgent](https://arxiv.org/abs/2312.13771), [Mobile-Agent](https://arxiv.org/abs/2401.16158), [Mobile-Agent-v2](https://arxiv.org/abs/2406.01014), [A3](https://arxiv.org/abs/2501.01149), [MemGUI-Bench](https://arxiv.org/abs/2602.06075), [PSPA-Bench](https://arxiv.org/abs/2603.29318), [OmniGUI](https://arxiv.org/abs/2605.18758), and [How Mobile World Model Guides GUI Agents?](https://arxiv.org/abs/2605.10347).
 
-**Grounding and perception.** Read [ScreenAI](https://arxiv.org/abs/2402.04615), [Ferret-UI](https://arxiv.org/abs/2404.05719), [UGround](https://arxiv.org/abs/2410.05243), [ScreenSpot-Pro](https://arxiv.org/abs/2504.07981), [GUI-Actor](https://arxiv.org/abs/2506.03143), [Phi-Ground](https://arxiv.org/abs/2507.23779), [GUI-Eyes](https://arxiv.org/abs/2601.09770), and [UI-Zoomer](https://arxiv.org/abs/2604.14113).
+**Grounding and perception.** Read [ScreenAI](https://arxiv.org/abs/2402.04615), [Ferret-UI](https://arxiv.org/abs/2404.05719), [UGround](https://arxiv.org/abs/2410.05243), [ScreenSpot-Pro](https://arxiv.org/abs/2504.07981), [GUI-Actor](https://arxiv.org/abs/2506.03143), [Phi-Ground](https://arxiv.org/abs/2507.23779), [GUI-Eyes](https://arxiv.org/abs/2601.09770), [UI-Zoomer](https://arxiv.org/abs/2604.14113), [SafeGround](https://arxiv.org/abs/2602.02419), [AutoFocus](https://arxiv.org/abs/2605.02630), and [PAGER](https://arxiv.org/abs/2605.15963).
 
-**Embodied VLA.** Start with [PerAct](https://arxiv.org/abs/2209.05451), [VIMA](https://arxiv.org/abs/2210.03094), [RT-1](https://arxiv.org/abs/2212.06817), [PaLM-E](https://arxiv.org/abs/2303.03378), [RT-2](https://arxiv.org/abs/2307.15818), [Open X-Embodiment](https://arxiv.org/abs/2310.08864), [OpenVLA](https://arxiv.org/abs/2406.09246), [Pi-Zero](https://arxiv.org/abs/2410.24164), [Magma](https://arxiv.org/abs/2502.13130), and [World-Value-Action](https://arxiv.org/abs/2604.14732).
+**Embodied VLA.** Start with [PerAct](https://arxiv.org/abs/2209.05451), [VIMA](https://arxiv.org/abs/2210.03094), [RT-1](https://arxiv.org/abs/2212.06817), [PaLM-E](https://arxiv.org/abs/2303.03378), [RT-2](https://arxiv.org/abs/2307.15818), [Open X-Embodiment](https://arxiv.org/abs/2310.08864), [OpenVLA](https://arxiv.org/abs/2406.09246), [Pi-Zero](https://arxiv.org/abs/2410.24164), [Magma](https://arxiv.org/abs/2502.13130), [World-Value-Action](https://arxiv.org/abs/2604.14732), [VLAs-as-Tools](https://arxiv.org/abs/2605.13119), [VLA-REPLICA](https://arxiv.org/abs/2605.20774), and [Pre-VLA](https://arxiv.org/abs/2605.22446).
 
-**Agentic visual reasoning and creation.** Read [VISPROG](https://arxiv.org/abs/2211.11559), [Visual ChatGPT](https://arxiv.org/abs/2303.04671), [ViperGPT](https://arxiv.org/abs/2303.08128), [LLaVA-Plus](https://arxiv.org/abs/2311.05437), [GenArtist](https://arxiv.org/abs/2407.05600), [DeepEyes](https://arxiv.org/abs/2505.14362), [Agent Banana](https://arxiv.org/abs/2602.09084), [VisionCreator](https://arxiv.org/abs/2603.02681), and [GEMS](https://arxiv.org/abs/2603.28088).
+**Agentic visual reasoning and creation.** Read [VISPROG](https://arxiv.org/abs/2211.11559), [Visual ChatGPT](https://arxiv.org/abs/2303.04671), [ViperGPT](https://arxiv.org/abs/2303.08128), [LLaVA-Plus](https://arxiv.org/abs/2311.05437), [DiffusionAgent](https://arxiv.org/abs/2401.10061), [GenArtist](https://arxiv.org/abs/2407.05600), [DeepEyes](https://arxiv.org/abs/2505.14362), [Agent Banana](https://arxiv.org/abs/2602.09084), [VisionCreator](https://arxiv.org/abs/2603.02681), [Visual Agentic Memory](https://arxiv.org/abs/2605.16481), [GEMS](https://arxiv.org/abs/2603.28088), and [GenEvolve](https://arxiv.org/abs/2605.21605).
+
+**General visual agents.** Read [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/abs/2505.14246), [VisualToolAgent](https://arxiv.org/abs/2505.20289), [Orion](https://arxiv.org/abs/2511.14210), [Kimi K2.5](https://arxiv.org/abs/2602.02276), [VTC-Bench](https://arxiv.org/abs/2603.15030), [MMSkills](https://arxiv.org/abs/2605.13527), [Visual Agentic Memory](https://arxiv.org/abs/2605.16481), [HierVA](https://arxiv.org/abs/2605.04304), and [DV-World](https://arxiv.org/abs/2604.25914).
 
 [Back to top](#top)
 
@@ -111,20 +115,46 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | [GUI-Eyes](https://arxiv.org/abs/2601.09770) | 2026-01 | Active visual perception for GUI grounding with learned crop/zoom tool use. |
 | [ShowUI-Aloha](https://arxiv.org/abs/2601.07181) | 2026-01 | Converts human screen recordings into structured GUI-agent supervision. |
 | [OS-Symphony](https://arxiv.org/abs/2601.07779) | 2026-01 | Holistic framework for robust computer-using agents. |
-| [ActionEngine](https://arxiv.org/abs/2602.20502) | 2026-02 | Uses state-machine memory to make GUI agents more programmatic and recoverable. |
+| [Kimi K2.5](https://arxiv.org/abs/2602.02276) | 2026-02 | Open-source multimodal model focused on visual agentic intelligence. |
 | [Agent Banana](https://arxiv.org/abs/2602.09084) | 2026-02 | Agentic image editing with planning and tool execution rather than one-shot editing. |
 | [SAGE](https://arxiv.org/abs/2602.10116) | 2026-02 | Agentic 3D scene generation for embodied-AI policy training. |
+| [ActionEngine](https://arxiv.org/abs/2602.20502) | 2026-02 | Uses state-machine memory to make GUI agents more programmatic and recoverable. |
+| [OmniStream](https://arxiv.org/abs/2603.12265) | 2026-03 | Streaming visual-agent representation for perception, reconstruction, and action. |
+| [VTC-Bench](https://arxiv.org/abs/2603.15030) | 2026-03 | Evaluates compositional visual tool chaining in agentic multimodal models. |
 | [CUA-Suite](https://arxiv.org/abs/2603.24440) | 2026-03 | Large human-annotated video demonstrations for computer-use agents. |
 | [GEMS](https://arxiv.org/abs/2603.28088) | 2026-03 | Multimodal generation loop with memory, skills, and iterative agent refinement. |
+| [SciVisAgentBench](https://arxiv.org/abs/2603.29139) | 2026-03-31 | Benchmark for scientific data analysis and visualization agents. |
+| [SASAV](https://arxiv.org/abs/2604.03406) | 2026-04-03 | Self-directed agent for scientific analysis and visualization workflows. |
 | [UI-Copilot](https://arxiv.org/abs/2604.13822) | 2026-04 | Long-horizon GUI automation with tool-integrated policy optimization. |
 | [UI-Zoomer](https://arxiv.org/abs/2604.14113) | 2026-04 | Uncertainty-driven zoom-in for hard GUI grounding cases. |
+| [CANVAS](https://arxiv.org/abs/2604.13452) | 2026-04-15 | Agentic storyboarding for continuity-aware long-form visual narratives. |
+| [Progressive Online Video Understanding](https://arxiv.org/abs/2604.18459) | 2026-04-20 | Streaming visual-agent setting where answers trigger when enough evidence appears. |
+| [Beyond Pixels](https://arxiv.org/abs/2604.21134) | 2026-04-22 | Interactive grounding for visualization agents beyond static pixel reading. |
+| [AI-Gram](https://arxiv.org/abs/2604.21446) | 2026-04-23 | Deployed AI-native social network where visual agents create and respond to visual content. |
 | [DynamicGUIBench](https://arxiv.org/abs/2604.25380) | 2026-04 | Evaluates GUI agents in high-dynamic interfaces rather than static screenshots. |
-| [Video2GUI](https://arxiv.org/abs/2605.14747) | 2026-05 | Synthesizes GUI interaction trajectories from instructional videos. |
+| [DV-World](https://arxiv.org/abs/2604.25914) | 2026-04-28 | Real-world benchmark for data-visualization agents with grounding and intent alignment. |
 | [UI-Verse](https://arxiv.org/abs/2605.02729) | 2026-05 | Studies interface design heuristics that improve computer-use-agent reliability. |
+| [HierVA](https://arxiv.org/abs/2605.04304) | 2026-05-05 | Hierarchical visual agent for chart reasoning across image-text contexts. |
 | [Securing Computer-Use Agents](https://arxiv.org/abs/2605.07110) | 2026-05 | Connects CUA architecture, lifecycle, permission scope, and runtime reliability. |
 | [Don't Click That](https://arxiv.org/abs/2605.09497) | 2026-05 | Deception-aware web-agent benchmark and defense for misleading interface elements. |
 | [VLAs-as-Tools](https://arxiv.org/abs/2605.13119) | 2026-05-13 | Long-horizon embodied-agent strategy that delegates bounded physical subtasks to specialized VLA tools. |
+| [MMSkills](https://arxiv.org/abs/2605.13527) | 2026-05-13 | Multimodal skill packages for reusable procedural knowledge in general visual agents. |
+| [Video2GUI](https://arxiv.org/abs/2605.14747) | 2026-05 | Synthesizes GUI interaction trajectories from instructional videos. |
 | [SaaS-Bench](https://arxiv.org/abs/2605.15777) | 2026-05-15 | Real-world SaaS workflow benchmark for long-horizon computer-use agents. |
+| [ScreenSearch](https://arxiv.org/abs/2605.16024) | 2026-05-15 | Ambiguity-aware OS exploration for building large desktop GUI state graphs. |
+| [ShopGym](https://arxiv.org/abs/2605.16116) | 2026-05-15 | Realistic, controllable e-commerce simulation and benchmark for web agents. |
+| [Visual Agentic Memory](https://arxiv.org/abs/2605.16481) | 2026-05-15 | Online indexing, hierarchical memory, and agentic retrieval for long video understanding. |
+| [SE-GA](https://arxiv.org/abs/2605.16883) | 2026-05-16 | Memory-augmented self-evolution framework for long-horizon GUI agents. |
+| [DocOS](https://arxiv.org/abs/2605.18048) | 2026-05-18 | Benchmark for GUI agents that proactively retrieve documentation and ground it into actions. |
+| [MementoGUI](https://arxiv.org/abs/2605.18652) | 2026-05-18 | Learned multimodal memory controller for long-horizon GUI-agent trajectories. |
+| [AQuaUI](https://arxiv.org/abs/2605.19260) | 2026-05-19 | Adaptive quadtree visual-token reduction for high-resolution GUI-agent screenshots. |
+| [CutVerse](https://arxiv.org/abs/2605.19484) | 2026-05-19 | GUI-agent benchmark for professional media post-production editing workflows. |
+| [OpenComputer](https://arxiv.org/abs/2605.19769) | 2026-05-19 | Verifier-grounded software worlds and auditable rewards for computer-use agents. |
+| [VLA-REPLICA](https://arxiv.org/abs/2605.20774) | 2026-05-20 | Low-cost, reproducible real-world benchmark for VLA model evaluation. |
+| [Agent JIT Compilation](https://arxiv.org/abs/2605.21470) | 2026-05-20 | Compiles web-agent plans into lower-latency executable schedules. |
+| [GenEvolve](https://arxiv.org/abs/2605.21605) | 2026-05-20 | Self-evolving image-generation agent using tool-orchestrated visual experience distillation. |
+| [Pre-VLA](https://arxiv.org/abs/2605.22446) | 2026-05-21 | Runtime verification for risky VLA actions and world-model rollouts before execution. |
+| [Spatial Memory for Out-of-Vision Manipulation](https://arxiv.org/abs/2605.22283) | 2026-05-21 | Adds persistent spatial memory to VLA policies when targets leave the camera view. |
 
 [Back to top](#top)
 
@@ -145,6 +175,9 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Safety in Embodied AI | 2026 | [paper](https://arxiv.org/abs/2605.02900) | Wider safety survey across perception, planning, action, and interaction. |
 | Visual Generation in the New Era | 2026 | [paper](https://arxiv.org/abs/2604.28185) | Conceptual lens for when visual generation becomes agentic world modeling. |
 | Securing Computer-Use Agents | 2026 | [paper](https://arxiv.org/abs/2605.07110) | Deployment-grounded view of CUA reliability across architecture, lifecycle, permissions, and oversight. |
+| GUI Agents with Reinforcement Learning | 2026 | [paper](https://arxiv.org/abs/2604.27955) | RL-centered survey of GUI-agent rewards, data efficiency, continual learning, and deployment risks. |
+| Agentic World Modeling | 2026 | [paper](https://arxiv.org/abs/2604.22748) | Taxonomy for predictive world models across physical, digital, social, and scientific agents. |
+| World Action Models | 2026 | [paper](https://arxiv.org/abs/2605.12090) | Defines embodied models that jointly predict future states and actions rather than actions alone. |
 
 [Back to top](#top)
 
@@ -171,7 +204,13 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Test-Time RL for GUI Grounding | 2025 | [paper](https://arxiv.org/abs/2508.05615) | Test-time adaptation using region consistency. |
 | Explicit Position-to-Coordinate Mapping | 2025 | [paper](https://arxiv.org/abs/2510.03230) | Addresses coordinate generation as a concrete grounding bottleneck. |
 | GUI-Eyes | 2026 | [paper](https://arxiv.org/abs/2601.09770) | Learns when and how to call visual tools such as crop and zoom. |
+| SafeGround | 2026 | [paper](https://arxiv.org/abs/2602.02419) | Calibrates GUI-grounding uncertainty before risky or irreversible actions. |
 | UI-Zoomer | 2026 | [paper](https://arxiv.org/abs/2604.14113), [code](https://github.com/ZJU-REAL/UI-Zoomer) | Uses uncertainty to decide where to zoom for GUI grounding. |
+| AutoFocus | 2026 | [paper](https://arxiv.org/abs/2605.02630) | Training-free active visual search for high-resolution GUI grounding. |
+| DRS-GUI | 2026 | [paper](https://arxiv.org/abs/2605.15542) | Dynamic region search that narrows cluttered screenshots without model fine-tuning. |
+| WinDeskGround | 2026 | [paper](https://arxiv.org/abs/2605.16402) | Robust grounding benchmark for complex multi-window desktop interfaces. |
+| PAGER | 2026 | [paper](https://arxiv.org/abs/2605.15963) | Studies point-precise geometric GUI control where small coordinate errors cascade. |
+| AQuaUI | 2026 | [paper](https://arxiv.org/abs/2605.19260) | Adaptive-quadtree visual-token reduction for high-resolution GUI-agent screenshots. |
 
 [Back to top](#top)
 
@@ -212,18 +251,41 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | ZeroGUI | 2025 | [paper](https://arxiv.org/abs/2505.23762) | Online GUI-agent learning with task generation and reward estimation. |
 | OpenCUA | 2025 | [paper](https://arxiv.org/abs/2508.09123), [code](https://github.com/xlang-ai/OpenCUA) | Open foundation stack for computer-use agents. |
 | ScaleCUA | 2025 | [paper](https://arxiv.org/abs/2509.15221), [code](https://github.com/OpenGVLab/ScaleCUA) | Cross-platform data scaling for open-source computer-use agents. |
-| OmegaUse | 2026 | [paper](https://arxiv.org/abs/2601.20380) | General-purpose GUI agent for autonomous task execution. |
-| MemGUI-Bench | 2026 | [paper](https://arxiv.org/abs/2602.06075) | Evaluates memory across mobile GUI sessions and changing environments. |
-| SecAgent | 2026 | [paper](https://arxiv.org/abs/2603.08533) | Efficient 3B mobile GUI agent with semantic context compression and Chinese mobile data. |
+| WebGym | 2026 | [paper](https://arxiv.org/abs/2601.02439) | Large-scale training environment for realistic visual web agents. |
+| C-World | 2026 | [paper](https://arxiv.org/abs/2601.06328) | Environment creator for scalable computer-use-agent training. |
 | OS-Symphony | 2026 | [paper](https://arxiv.org/abs/2601.07779), [code](https://github.com/OS-Copilot/OS-Symphony) | Framework for robust and generalist computer-use agents. |
+| OmegaUse | 2026 | [paper](https://arxiv.org/abs/2601.20380) | General-purpose GUI agent for autonomous task execution. |
+| OS-Marathon | 2026 | [paper](https://arxiv.org/abs/2601.20650) | Benchmark for long-horizon repetitive professional computer-use workflows. |
+| Continual GUI Agents | 2026 | [paper](https://arxiv.org/abs/2601.20732) | Continual-learning setup and RL recipe for shifting GUI domains and resolutions. |
+| CUA-Skill | 2026 | [paper](https://arxiv.org/abs/2601.21123) | Structured skill base for reusable computer-use procedures and composition graphs. |
+| DynaWeb | 2026 | [paper](https://arxiv.org/abs/2601.22149) | Model-based RL framework that trains web agents inside learned web world models. |
+| Avenir-Web | 2026 | [paper](https://arxiv.org/abs/2602.02468) | Multimodal web agent with grounding experts, experience imitation, and memory. |
+| Agent Alpha | 2026 | [paper](https://arxiv.org/abs/2602.02995) | Uses step-level MCTS to unify GUI-agent generation, exploration, and evaluation. |
+| UI-Mem | 2026 | [paper](https://arxiv.org/abs/2602.05832) | Hierarchical experience memory for online RL in mobile GUI agents. |
+| MemGUI-Bench | 2026 | [paper](https://arxiv.org/abs/2602.06075) | Evaluates memory across mobile GUI sessions and changing environments. |
 | ActionEngine | 2026 | [paper](https://arxiv.org/abs/2602.20502) | State-machine memory for more structured GUI automation. |
+| SecAgent | 2026 | [paper](https://arxiv.org/abs/2603.08533) | Efficient 3B mobile GUI agent with semantic context compression and Chinese mobile data. |
 | ContractSkill | 2026 | [paper](https://arxiv.org/abs/2603.20340) | Treats web-agent skills as repairable contracts that can be verified and reused. |
-| UI-Copilot | 2026 | [paper](https://arxiv.org/abs/2604.13822), [code](https://github.com/ZJU-REAL/UI-Copilot) | Long-horizon GUI automation with tool-integrated policy optimization. |
+| PSPA-Bench | 2026 | [paper](https://arxiv.org/abs/2603.29318) | Personalized smartphone GUI-agent benchmark with process-level evaluation. |
+| GPA | 2026 | [paper](https://arxiv.org/abs/2604.01676) | Demonstration-based GUI process automation with local deterministic replay. |
 | ClawGUI | 2026 | [paper](https://arxiv.org/abs/2604.11784) | Unified framework for training, evaluating, and deploying GUI agents. |
 | RiskWebWorld | 2026 | [paper](https://arxiv.org/abs/2604.13531) | Realistic interactive benchmark for e-commerce risk-management GUI agents. |
+| UI-Copilot | 2026 | [paper](https://arxiv.org/abs/2604.13822), [code](https://github.com/ZJU-REAL/UI-Copilot) | Long-horizon GUI automation with tool-integrated policy optimization. |
 | DynamicGUIBench | 2026 | [paper](https://arxiv.org/abs/2604.25380) | Stress-tests agents in dynamic, evolving GUI environments. |
+| OmniGUI | 2026 | [paper](https://arxiv.org/abs/2605.18758), [project](https://omni-gui.github.io) | Smartphone GUI benchmark with synchronized visual, audio, and video context. |
 | UI-Verse | 2026 | [paper](https://arxiv.org/abs/2605.02729) | Interface-design perspective on making CUAs more reliable. |
+| How Mobile World Model Guides GUI Agents? | 2026 | [paper](https://arxiv.org/abs/2605.10347) | Analyzes which mobile world-model representations help GUI-agent training and test-time guidance. |
+| Executable Agentic Memory | 2026 | [paper](https://arxiv.org/abs/2605.12294) | Converts GUI experience into executable memory graphs for retrieval-and-execution planning. |
 | SaaS-Bench | 2026 | [paper](https://arxiv.org/abs/2605.15777), [code](https://github.com/UniPat-AI/SaaS-Bench) | Long-horizon benchmark over real deployable SaaS systems and professional workflows. |
+| ShopGym | 2026 | [paper](https://arxiv.org/abs/2605.16116) | Realistic, controllable e-commerce simulation and benchmark for web agents. |
+| ScreenSearch | 2026 | [paper](https://arxiv.org/abs/2605.16024) | Ambiguity-aware large-scale desktop OS exploration with deduplicated state graphs. |
+| Skim | 2026 | [paper](https://arxiv.org/abs/2605.16565) | Speculative execution framework for faster web-agent workflows on structured sites. |
+| SE-GA | 2026 | [paper](https://arxiv.org/abs/2605.16883), [code](https://github.com/jinshilong-dev/SE-GA) | Memory-augmented self-evolving GUI agent for dynamic long-horizon tasks. |
+| DocOS | 2026 | [paper](https://arxiv.org/abs/2605.18048) | Proactive document-guided GUI-agent benchmark in open web environments. |
+| MementoGUI | 2026 | [paper](https://arxiv.org/abs/2605.18652) | Plug-in multimodal memory controller for long-horizon GUI control. |
+| OpenComputer | 2026 | [paper](https://arxiv.org/abs/2605.19769) | Verifiable software worlds with state verifiers, task generation, and auditable rewards. |
+| CutVerse | 2026 | [paper](https://arxiv.org/abs/2605.19484) | Benchmark for professional media post-production editing with dense multimodal GUIs. |
+| Agent JIT Compilation | 2026 | [paper](https://arxiv.org/abs/2605.21470) | Compiles web-agent plans into lower-latency executable schedules. |
 
 [Back to top](#top)
 
@@ -248,6 +310,11 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | World-Value-Action | 2026 | [paper](https://arxiv.org/abs/2604.14732) | Uses implicit planning and future-state value estimation for VLA systems. |
 | VLAs-as-Tools | 2026 | [paper](https://arxiv.org/abs/2605.13119) | Splits long-horizon embodied tasks between a high-level VLM planner and specialized VLA tools. |
 | SAGE | 2026 | [paper](https://arxiv.org/abs/2602.10116), [code](https://github.com/NVlabs/sage) | Agentically generates simulator-ready 3D scenes for embodied policy training. |
+| StableVLA | 2026 | [paper](https://arxiv.org/abs/2605.18287) | Studies robustness of VLA models under unseen visual disturbances without extra data. |
+| Dexora | 2026 | [paper](https://arxiv.org/abs/2605.18722) | Open-source VLA direction for high-DoF bimanual dexterous manipulation. |
+| VLA-REPLICA | 2026 | [paper](https://arxiv.org/abs/2605.20774) | Low-cost reproducible real-world evaluation benchmark for VLA models. |
+| Spatial Memory for Out-of-Vision Manipulation | 2026 | [paper](https://arxiv.org/abs/2605.22283) | Adds persistent spatial memory when manipulation targets leave the current camera view. |
+| Pre-VLA | 2026 | [paper](https://arxiv.org/abs/2605.22446) | Preemptive runtime verification for VLA actions and world-model rollouts. |
 
 [Back to top](#top)
 
@@ -259,6 +326,7 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Visual ChatGPT | 2023 | [paper](https://arxiv.org/abs/2303.04671), [code](https://github.com/chenfei-wu/TaskMatrix) | Early system connecting ChatGPT with visual foundation models for multi-step visual tasks. |
 | ViperGPT | 2023 | [paper](https://arxiv.org/abs/2303.08128), [code](https://github.com/cvlab-columbia/viper) | Uses Python execution to compose vision modules for interpretable visual reasoning. |
 | LLaVA-Plus | 2023 | [paper](https://arxiv.org/abs/2311.05437) | Trains multimodal agents to select and use visual tools across understanding and generation. |
+| DiffusionAgent | 2024 | [paper](https://arxiv.org/abs/2401.10061) | Routes prompts through expert diffusion models with tree-of-thought navigation and feedback memory. |
 | GenArtist | 2024 | [paper](https://arxiv.org/abs/2407.05600), [code](https://github.com/zhenyuw16/GenArtist) | MLLM-as-agent for image generation and editing through planning and tool use. |
 | CIGEval | 2025 | [paper](https://arxiv.org/abs/2504.07046) | Agentic evaluation framework for conditional image generation. |
 | DeepEyes | 2025 | [paper](https://arxiv.org/abs/2505.14362) | Reinforcement learning for active visual reasoning, grounding, and "thinking with images." |
@@ -268,9 +336,42 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Agent Banana | 2026 | [paper](https://arxiv.org/abs/2602.09084), [code](https://github.com/taco-group/agent-banana) | High-fidelity image editing with planner-executor tooling. |
 | M3 | 2026 | [paper](https://arxiv.org/abs/2602.06166) | Multi-modal, multi-agent, multi-round reasoning for high-fidelity text-to-image generation. |
 | VisionCreator | 2026 | [paper](https://arxiv.org/abs/2603.02681) | Native visual-generation agentic model with understanding, planning, and creation. |
+| VisionCreator-R1 | 2026 | [paper](https://arxiv.org/abs/2603.08812) | Adds explicit reflection and reflection-plan co-optimization for visual-generation agents. |
 | Gen-Searcher | 2026 | [paper](https://arxiv.org/abs/2603.28767), [project](https://gen-searcher.vercel.app/) | Reinforces agentic search for image generation. |
 | GEMS | 2026 | [paper](https://arxiv.org/abs/2603.28088), [project](https://gems-gen.github.io/) | Multimodal generation with memory, skills, and iterative agent loops. |
 | Visual Generation in the New Era | 2026 | [paper](https://arxiv.org/abs/2604.28185) | Helpful taxonomy for agentic world modeling and generation. |
+| Visual Agentic Memory | 2026 | [paper](https://arxiv.org/abs/2605.16481) | Online indexing, hierarchical memory, and agentic retrieval for long video understanding. |
+| GenEvolve | 2026 | [paper](https://arxiv.org/abs/2605.21605) | Self-evolving image-generation agent with tool-orchestrated visual experience distillation. |
+
+[Back to top](#top)
+
+### General Visual Agents, Tool Use, and Visualization Agents
+
+| Work | Year | Links | Contribution / Relevance |
+| --- | --- | --- | --- |
+| AVA | 2023 | [paper](https://arxiv.org/abs/2312.04494) | Autonomous visualization agents with visual perception-driven decision making. |
+| Visual Agents as Fast and Slow Thinkers | 2024 | [paper](https://arxiv.org/abs/2408.08862) | System-1/System-2 framing for visual-agent reasoning and action. |
+| Visual Agentic AI for Spatial Reasoning | 2025 | [paper](https://arxiv.org/abs/2502.06787) | Dynamic-API visual agent for spatial reasoning in 3D scenes. |
+| Visual Agentic Reinforcement Fine-Tuning | 2025 | [paper](https://arxiv.org/abs/2505.14246) | Trains VLMs to use visual tools and code for "thinking with images." |
+| ParaView-MCP | 2025 | [paper](https://arxiv.org/abs/2505.07064) | Autonomous visualization agent with direct tool use in ParaView. |
+| VisualToolAgent / VisTA | 2025 | [paper](https://arxiv.org/abs/2505.20289) | RL framework for dynamic visual tool selection and composition. |
+| Evaluation-Centric Scientific Visualization Agents | 2025 | [paper](https://arxiv.org/abs/2509.15160) | Evaluation-first paradigm for scientific visualization agents. |
+| DART | 2025 | [paper](https://arxiv.org/abs/2512.07132) | Uses multi-agent disagreement to recruit specialized visual tools. |
+| Orion | 2025 | [paper](https://arxiv.org/abs/2511.14210) | Unified visual agent for multimodal perception, visual reasoning, and tool execution. |
+| Kimi K2.5 | 2026 | [paper](https://arxiv.org/abs/2602.02276) | Open-source multimodal agentic model optimized jointly for text and vision. |
+| OmniStream | 2026 | [paper](https://arxiv.org/abs/2603.12265) | Streaming visual-agent representation for perception, reconstruction, and action. |
+| VTC-Bench | 2026 | [paper](https://arxiv.org/abs/2603.15030) | Evaluates agentic multimodal models through compositional visual tool chaining. |
+| SciVisAgentBench | 2026 | [paper](https://arxiv.org/abs/2603.29139) | Reproducible benchmark for scientific data analysis and visualization agents. |
+| SASAV | 2026 | [paper](https://arxiv.org/abs/2604.03406) | Self-directed scientific analysis and visualization agent. |
+| CANVAS | 2026 | [paper](https://arxiv.org/abs/2604.13452) | Visual agentic storyboarding for continuity-aware long-form visual narratives. |
+| Progressive Online Video Understanding | 2026 | [paper](https://arxiv.org/abs/2604.18459) | Online visual agent that answers when enough streaming evidence appears. |
+| Beyond Pixels | 2026 | [paper](https://arxiv.org/abs/2604.21134) | Introspective and interactive grounding for visualization agents. |
+| AI-Gram | 2026 | [paper](https://arxiv.org/abs/2604.21446) | Live social platform populated by visual agents that create and respond to visual content. |
+| DV-World | 2026 | [paper](https://arxiv.org/abs/2604.25914) | Real-world benchmark for data-visualization agents with native environment grounding. |
+| Hierarchical Visual Agent / HierVA | 2026 | [paper](https://arxiv.org/abs/2605.04304) | Manages image-text contexts for multi-step chart reasoning across subplots. |
+| Emergent Communication between Heterogeneous Visual Agents | 2026 | [paper](https://arxiv.org/abs/2605.11695) | Studies decentralized communication when visual agents have private representations. |
+| MMSkills | 2026 | [paper](https://arxiv.org/abs/2605.13527) | Multimodal procedural skill packages for reusable visual-agent decision making. |
+| Visual Agentic Memory | 2026 | [paper](https://arxiv.org/abs/2605.16481) | Training-free visual memory for online indexing, retrieval, and evidence verification. |
 
 [Back to top](#top)
 
@@ -284,15 +385,24 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | OpenAgentSafety | 2025 | [paper](https://arxiv.org/abs/2507.06134) | Framework for evaluating real-world agent safety across risk categories. |
 | OS-Sentinel | 2025 | [paper](https://arxiv.org/abs/2510.24411) | Hybrid validation for safer mobile GUI agents. |
 | UI-CUBE | 2025 | [paper](https://arxiv.org/abs/2511.17131) | Enterprise CUA benchmark that measures operational reliability beyond task accuracy. |
+| SafePred | 2026 | [paper](https://arxiv.org/abs/2602.01725) | Predictive guardrail for computer-using agents using world-model rollouts. |
+| LPS-Bench | 2026 | [paper](https://arxiv.org/abs/2602.03255) | Safety-awareness benchmark for long-horizon CUA planning under benign and adversarial scenarios. |
 | GUIGuard-Bench | 2026 | [paper](https://arxiv.org/abs/2601.18842) | Privacy-preserving GUI-agent evaluation. |
 | CUAAudit | 2026 | [paper](https://arxiv.org/abs/2603.10577) | Tests whether VLMs can audit autonomous computer-use agents. |
+| GUIDE | 2026 | [paper](https://arxiv.org/abs/2604.04399) | Hierarchical diagnostic evaluation for long GUI-agent trajectories. |
+| VeriGUI | 2026 | [paper](https://arxiv.org/abs/2604.05477) | Action-effect verification and self-correction for robust GUI automation. |
+| Semantic-level UI Element Injection | 2026 | [paper](https://arxiv.org/abs/2604.07831) | Red-teaming method that distracts GUI agents through benign-looking injected UI elements. |
+| CORA | 2026 | [paper](https://arxiv.org/abs/2604.09155) | Conformal risk-controlled safeguard for mobile GUI-agent action execution. |
 | OS-BLIND | 2026 | [paper](https://arxiv.org/abs/2604.10577) | Shows how benign-looking user instructions expose CUA vulnerabilities. |
 | HazardArena | 2026 | [paper](https://arxiv.org/abs/2604.12447) | Semantic safety evaluation for VLA systems. |
 | RedVLA | 2026 | [paper](https://arxiv.org/abs/2604.22591) | Physical red-teaming benchmark for VLA models. |
 | GUI-Perturbed | 2026 | [paper](https://arxiv.org/abs/2604.14262) | Domain-randomization study exposing GUI-grounding brittleness. |
 | OS-SPEAR | 2026 | [paper](https://arxiv.org/abs/2604.24348) | Toolkit for safety, performance, efficiency, and robustness analysis of OS agents. |
 | Don't Click That | 2026 | [paper](https://arxiv.org/abs/2605.09497) | Benchmarks and mitigates deceptive UI elements for VLM-based web agents. |
+| SafeManip | 2026 | [paper](https://arxiv.org/abs/2605.12386) | Temporal-safety benchmark for robotic manipulation using LTL-style monitors. |
+| WARD | 2026 | [paper](https://arxiv.org/abs/2605.15030) | Robust defense for web agents against prompt injection in HTML and visual interfaces. |
 | ProjGuard | 2026 | [paper](https://arxiv.org/abs/2605.13631) | Safety monitoring for computer-use agents via low-dimensional projections. |
+| Pre-VLA | 2026 | [paper](https://arxiv.org/abs/2605.22446) | Runtime verification for risky VLA action generation and imagined rollouts. |
 
 [Back to top](#top)
 
@@ -309,11 +419,17 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Web | WorkArena | [paper](https://arxiv.org/abs/2403.07718), [code](https://github.com/ServiceNow/WorkArena) | Enterprise workflow automation in ServiceNow-style environments. |
 | Web | MMInA | [paper](https://arxiv.org/abs/2404.09992), [code](https://github.com/shulin16/MMInA) | Multihop multimodal tasks over evolving real websites. |
 | Web | WebCanvas | [paper](https://arxiv.org/abs/2406.12373) | Online web-agent evaluation with Mind2Web-Live. |
+| Web | WebGym | [paper](https://arxiv.org/abs/2601.02439) | Large-scale realistic training environment for visual web agents. |
+| Web | DocOS | [paper](https://arxiv.org/abs/2605.18048) | Document-guided GUI-agent tasks in dynamic open-web environments. |
 | Web | RiskWebWorld | [paper](https://arxiv.org/abs/2604.13531) | Realistic e-commerce risk-management tasks for GUI agents. |
 | Web | SaaS-Bench | [paper](https://arxiv.org/abs/2605.15777), [code](https://github.com/UniPat-AI/SaaS-Bench) | Long-horizon professional workflows across deployable SaaS systems. |
+| Web | ShopGym | [paper](https://arxiv.org/abs/2605.16116) | Controllable e-commerce simulation with realistic layouts, catalogs, policies, and tasks. |
 | Desktop | OSWorld | [paper](https://arxiv.org/abs/2404.07972), [code](https://github.com/xlang-ai/OSWorld) | Open-ended desktop tasks in real operating systems. |
 | Desktop | Windows Agent Arena | [paper](https://arxiv.org/abs/2409.08264), [code](https://github.com/microsoft/WindowsAgentArena) | Windows-specific scaling and reproducible OS-agent evaluation. |
 | Desktop | OmniACT | [paper](https://arxiv.org/abs/2402.17553) | Evaluating executable automation rather than only low-level clicks. |
+| Desktop | OS-Marathon | [paper](https://arxiv.org/abs/2601.20650) | Long-horizon repetitive professional workflows. |
+| Desktop | OpenComputer | [paper](https://arxiv.org/abs/2605.19769) | Verifiable software worlds with state verifiers and auditable partial-credit rewards. |
+| Desktop | CutVerse | [paper](https://arxiv.org/abs/2605.19484) | Media post-production editing tasks across professional creative applications. |
 | Mobile | Android in the Wild | [paper](https://arxiv.org/abs/2307.10088) | Large-scale Android device-control demonstrations with screen observations. |
 | Mobile | B-MoCA | [paper](https://arxiv.org/abs/2404.16660) | Mobile control across diverse device configurations. |
 | Mobile | AndroidWorld | [paper](https://arxiv.org/abs/2405.14573), [code](https://github.com/google-research/android_world) | Dynamic Android tasks with broad app coverage. |
@@ -323,16 +439,29 @@ An item is removed or left out when the visual-agent connection is weak, the lin
 | Mobile | AndroidLab | [paper](https://arxiv.org/abs/2410.24024) | Training and systematic benchmarking on Android virtual devices. |
 | Mobile | A3 | [paper](https://arxiv.org/abs/2501.01149), [project](https://yuxiangchai.github.io/Android-Agent-Arena/) | Real-app online evaluation for mobile GUI agents. |
 | Mobile | SecAgent | [paper](https://arxiv.org/abs/2603.08533) | Chinese mobile GUI dataset, benchmark, and compact semantic-context agent. |
+| Mobile | PSPA-Bench | [paper](https://arxiv.org/abs/2603.29318) | Personalized smartphone GUI-agent tasks with process-aware evaluation. |
+| Mobile | OmniGUI | [paper](https://arxiv.org/abs/2605.18758), [project](https://omni-gui.github.io) | Omni-modal smartphone action prediction with visual, audio, and video cues. |
+| Computer use | C-World | [paper](https://arxiv.org/abs/2601.06328) | On-demand environment creation for computer-use-agent training. |
 | Grounding | ScreenSpot-Pro | [paper](https://arxiv.org/abs/2504.07981) | High-resolution professional-screen grounding. |
+| Grounding | WinDeskGround | [paper](https://arxiv.org/abs/2605.16402) | Multi-window desktop grounding under realistic visual clutter. |
+| Grounding | PAGER | [paper](https://arxiv.org/abs/2605.15963) | Point-precise GUI control for geometric construction tasks. |
 | Visual-agent reasoning | MageBench | [paper](https://arxiv.org/abs/2412.04531), [code](https://github.com/microsoft/MageBench) | Lightweight environments for vision-in-the-chain agent reasoning. |
+| Visual-agent reasoning | VTC-Bench | [paper](https://arxiv.org/abs/2603.15030) | Compositional visual tool chaining for agentic multimodal models. |
+| Visualization | SciVisAgentBench | [paper](https://arxiv.org/abs/2603.29139) | Scientific data analysis and visualization-agent evaluation. |
+| Visualization | DV-World | [paper](https://arxiv.org/abs/2604.25914) | Real-world data visualization tasks with environment grounding and intent alignment. |
 | Memory | MemGUI-Bench | [paper](https://arxiv.org/abs/2602.06075) | Cross-session and cross-temporal mobile GUI memory. |
+| Memory | MementoGUI-Bench | [paper](https://arxiv.org/abs/2605.18652) | Long-horizon GUI decision-making with memory consistency diagnostics. |
+| Memory | Visual Agentic Memory | [paper](https://arxiv.org/abs/2605.16481) | Online indexing and evidence retrieval for long video understanding. |
 | Dynamic GUI | DynamicGUIBench | [paper](https://arxiv.org/abs/2604.25380) | Robustness under evolving interfaces and dynamic UI changes. |
+| Exploration | ScreenSearch | [paper](https://arxiv.org/abs/2605.16024) | Large-scale desktop state-graph exploration under partial observability. |
 | Enterprise reliability | UI-CUBE | [paper](https://arxiv.org/abs/2511.17131) | Deployment-readiness diagnostics beyond simple task success. |
 | Security | VPI-Bench | [paper](https://arxiv.org/abs/2506.02456), [code](https://github.com/boyugou/VPI-Bench) | Visual prompt injection for GUI and computer-use agents. |
 | Safety | AGENTSAFE | [paper](https://arxiv.org/abs/2506.14697) | Hazardous-instruction safety for embodied agents. |
 | Safety | HazardArena | [paper](https://arxiv.org/abs/2604.12447) | Semantic safety evaluation for VLA systems. |
+| Safety | SafeManip | [paper](https://arxiv.org/abs/2605.12386) | Temporal safety properties for robotic manipulation rollouts. |
 | Embodied | LIBERO | [code](https://github.com/Lifelong-Robot-Learning/LIBERO) | Lifelong robot manipulation tasks. |
 | Embodied | RLBench | [code](https://github.com/stepjam/RLBench) | Simulation-based manipulation benchmark. |
+| Embodied | VLA-REPLICA | [paper](https://arxiv.org/abs/2605.20774) | Low-cost reproducible real-world VLA evaluation. |
 
 [Back to top](#top)
 
@@ -345,6 +474,9 @@ These resources are intentionally separated from research papers. They are imple
 | Resource | Type | Link | Primary Use |
 | --- | --- | --- | --- |
 | OpenAI Skills guide | docs | [Docs](https://developers.openai.com/api/docs/guides/tools-skills) | Understanding skill-style packaging for reusable agent capabilities. |
+| Agent Skills for Large Language Models | survey | [Paper](https://arxiv.org/abs/2602.12430) | Architecture, acquisition, and security framing for skill-based agents. |
+| CUA-Skill | skill base | [Paper](https://arxiv.org/abs/2601.21123) | Reusable computer-use procedures with parameterized execution graphs. |
+| MMSkills | multimodal skill framework | [Paper](https://arxiv.org/abs/2605.13527) | Reusable visual procedures with multimodal state, progress, and failure evidence. |
 | awesome-agent-skills | collection | [GitHub](https://github.com/VoltAgent/awesome-agent-skills) | Finding reusable agent skills across browsing, coding, documents, and visual tasks. |
 | awesome-gpt-image-2 | collection | [GitHub](https://github.com/freestylefly/awesome-gpt-image-2) | Tracking prompt patterns and workflows around modern image generation. |
 | gpt_image_2_skill | skill package | [GitHub](https://github.com/wuyoscar/gpt_image_2_skill) | Example of packaging image-generation workflows as reusable skills. |
@@ -361,6 +493,13 @@ These resources are intentionally separated from research papers. They are imple
 | GUI-G1 | grounding model | [GitHub](https://github.com/Yuqi-Zhou/GUI-G1) | Studying RL recipes and evaluation pitfalls for GUI grounding. |
 | UI-Zoomer | grounding tool | [GitHub](https://github.com/ZJU-REAL/UI-Zoomer) | Adaptive zoom-in when the target UI element is hard to localize. |
 | Phi-Ground | grounding model | [Paper](https://arxiv.org/abs/2507.23779) | Compact GUI grounding baseline for resource-constrained settings. |
+| SafeGround | grounding calibrator | [Paper](https://arxiv.org/abs/2602.02419) | Estimating grounding risk before executing high-impact GUI actions. |
+| AutoFocus | grounding tool | [Paper](https://arxiv.org/abs/2605.02630) | Training-free uncertainty-aware active visual search on high-resolution screens. |
+| AQuaUI | token reducer | [Paper](https://arxiv.org/abs/2605.19260) | Adaptive quadtree compression for GUI screenshots at inference time. |
+| Orion | visual agent | [Paper](https://arxiv.org/abs/2511.14210) | Tool-augmented visual reasoning and execution across images, videos, and documents. |
+| Kimi K2.5 | visual agentic model | [Paper](https://arxiv.org/abs/2602.02276) | Open-source multimodal agentic intelligence model with joint text-vision optimization. |
+| VisualToolAgent | tool selector | [Paper](https://arxiv.org/abs/2505.20289) | RL-based selection and composition of visual tools. |
+| VTC-Bench | tool-chain benchmark | [Paper](https://arxiv.org/abs/2603.15030) | Evaluating compositional visual tool use in agentic multimodal models. |
 
 ### Agent Runtimes and Operator Stacks
 
@@ -370,6 +509,8 @@ These resources are intentionally separated from research papers. They are imple
 | Agent S | runtime | [GitHub](https://github.com/simular-ai/Agent-S) | General computer-use experiments with a practical open framework. |
 | Cua | operator stack | [GitHub](https://github.com/trycua/cua) | Infrastructure for running and evaluating computer-use agents. |
 | OpenAdapt | generative RPA stack | [GitHub](https://github.com/OpenAdaptAI/OpenAdapt) | Recording GUI demonstrations, training models, and evaluating agents from a unified CLI. |
+| HIDAgent | HID toolkit | [Paper](https://arxiv.org/abs/2602.00492) | Enabling visual UI agents on HID-compatible devices. |
+| GPA | demo replay stack | [Paper](https://arxiv.org/abs/2604.01676) | Local GUI process automation from a single demonstration. |
 | browser-use | browser runtime | [GitHub](https://github.com/browser-use/browser-use) | Browser automation workflows when DOM/tool access is acceptable. |
 | Stagehand | browser runtime | [GitHub](https://github.com/browserbase/stagehand) | Hybrid code-plus-natural-language browser automation for production workflows. |
 | Playwright MCP | browser MCP server | [GitHub](https://github.com/microsoft/playwright-mcp) | Gives agents browser automation tools through the Model Context Protocol. |
@@ -392,9 +533,18 @@ These resources are intentionally separated from research papers. They are imple
 | WorkArena | enterprise benchmark | [GitHub](https://github.com/ServiceNow/WorkArena) | Enterprise-style workflow automation. |
 | OpenCUA | open CUA stack | [GitHub](https://github.com/xlang-ai/OpenCUA) | Data, models, and evaluation foundations for computer-use agents. |
 | ScaleCUA | scaling stack | [GitHub](https://github.com/OpenGVLab/ScaleCUA) | Cross-platform CUA data scaling and evaluation. |
+| WebGym | visual web environment | [Paper](https://arxiv.org/abs/2601.02439) | Large-scale realistic training tasks for visual web agents. |
+| C-World | environment creator | [Paper](https://arxiv.org/abs/2601.06328) | Creating diverse computer-use environments on demand. |
+| OpenComputer | verifiable worlds | [Paper](https://arxiv.org/abs/2605.19769) | State verifiers, synthetic desktop tasks, and auditable rewards. |
+| ShopGym | e-commerce simulator | [Paper](https://arxiv.org/abs/2605.16116) | Realistic and controllable e-commerce web-agent evaluation. |
+| SciVisAgentBench | visualization benchmark | [Paper](https://arxiv.org/abs/2603.29139) | Evaluating scientific visualization agents on executable analysis tasks. |
+| DV-World | data-visualization benchmark | [Paper](https://arxiv.org/abs/2604.25914) | Real-world visualization-agent scenarios with evolving environments. |
+| Visual Agentic Memory | video memory framework | [Paper](https://arxiv.org/abs/2605.16481) | Training-free long-video indexing, hierarchical memory, and retrieval. |
 | CUA-Suite | data suite | [Paper](https://arxiv.org/abs/2603.24440) | Large human-annotated video demonstrations for CUA research. |
 | ShowUI-Aloha | data pipeline | [Paper](https://arxiv.org/abs/2601.07181), [code](https://github.com/showlab/ShowUI) | Turning screen recordings into GUI-agent training trajectories. |
 | Video2GUI | data pipeline | [Paper](https://arxiv.org/abs/2605.14747) | Synthesizing GUI trajectories from instructional videos. |
+| ScreenSearch | exploration corpus | [Paper](https://arxiv.org/abs/2605.16024) | Building desktop GUI state graphs through ambiguity-aware exploration. |
+| CutVerse | creative-workflow benchmark | [Paper](https://arxiv.org/abs/2605.19484) | Professional media post-production GUI trajectories and evaluation. |
 | lmms-eval | eval toolkit | [GitHub](https://github.com/EvolvingLMMs-Lab/lmms-eval) | Static multimodal evaluation that can complement closed-loop agent tests. |
 
 ### Embodied and Robotics Tooling
@@ -407,6 +557,8 @@ These resources are intentionally separated from research papers. They are imple
 | RLBench | robotics benchmark | [GitHub](https://github.com/stepjam/RLBench) | Simulation-based manipulation evaluation. |
 | SAGE | 3D scene engine | [GitHub](https://github.com/NVlabs/sage) | Agentic 3D scene generation for embodied policy training. |
 | Magma | foundation model | [GitHub](https://github.com/microsoft/Magma) | Bridging digital computer use and physical action. |
+| VLA-REPLICA | robot benchmark | [Paper](https://arxiv.org/abs/2605.20774) | Low-cost reproducible real-world VLA evaluation. |
+| SafeManip | safety benchmark | [Paper](https://arxiv.org/abs/2605.12386) | Temporal-safety monitors for robotic manipulation rollouts. |
 
 [Back to top](#top)
 
@@ -414,14 +566,16 @@ These resources are intentionally separated from research papers. They are imple
 
 | Workflow | Practical stack |
 | --- | --- |
-| GUI grounding research | ScreenSpot-Pro + OmniParser + UGround + GUI-G1 + UI-Zoomer |
-| Browser-agent experiments | BrowserGym + AgentLab + WebArena + WebArena-Verified + VisualWebArena + WebLINX + MMInA + SaaS-Bench |
-| Desktop computer-use agents | UI-TARS Desktop + Agent S + Cua + OSWorld + Windows Agent Arena |
-| Mobile GUI agents | Android in the Wild + AndroidControl + AndroidWorld + A3 + MobileAgentBench + SPA-Bench + MemGUI-Bench |
-| Demonstration and data pipelines | OpenAdapt + OpenAdapt Desktop + ScreenPipe + ShowUI-Aloha + CUA-Suite + Video2GUI |
-| Agentic visual creation | gpt_image_2_skill + GenArtist + DeepEyes + Agent Banana + VisionCreator + GEMS |
-| Embodied VLA research | OpenVLA + LeRobot + LIBERO + RLBench + SAGE + Magma + VLAs-as-Tools |
-| Reliability and security testing | VPI-Bench + OpenAgentSafety + UI-CUBE + OS-BLIND + HazardArena + OS-SPEAR |
+| GUI grounding research | ScreenSpot-Pro + OmniParser + UGround + GUI-G1 + SafeGround + UI-Zoomer + AutoFocus + PAGER + AQuaUI |
+| Browser-agent experiments | BrowserGym + AgentLab + WebArena + WebArena-Verified + VisualWebArena + WebLINX + MMInA + WebGym + ShopGym + SaaS-Bench |
+| Desktop computer-use agents | UI-TARS Desktop + Agent S + Cua + OSWorld + Windows Agent Arena + OS-Marathon + OpenComputer + ScreenSearch + CutVerse |
+| Mobile GUI agents | Android in the Wild + AndroidControl + AndroidWorld + A3 + MobileAgentBench + SPA-Bench + MemGUI-Bench + PSPA-Bench + OmniGUI + UI-Mem |
+| Demonstration and data pipelines | OpenAdapt + OpenAdapt Desktop + ScreenPipe + ShowUI-Aloha + CUA-Suite + Video2GUI + C-World + OpenComputer |
+| Agentic visual creation | gpt_image_2_skill + DiffusionAgent + GenArtist + DeepEyes + Agent Banana + VisionCreator + VisionCreator-R1 + GEMS + GenEvolve |
+| General visual agents and tool use | Visual Agentic RFT + VisualToolAgent + Orion + Kimi K2.5 + VTC-Bench + MMSkills + Visual Agentic Memory |
+| Visualization and chart agents | AVA + ParaView-MCP + SciVisAgentBench + SASAV + Beyond Pixels + DV-World + HierVA |
+| Embodied VLA research | OpenVLA + LeRobot + LIBERO + RLBench + SAGE + Magma + VLAs-as-Tools + VLA-REPLICA + SafeManip + Pre-VLA |
+| Reliability and security testing | VPI-Bench + OpenAgentSafety + UI-CUBE + GUIDE + CORA + OS-BLIND + HazardArena + OS-SPEAR + WARD + Pre-VLA |
 
 [Back to top](#top)
 
